@@ -1,0 +1,35 @@
+@{
+    ViewData["Title"] = "Ver Campaña";
+}
+<section class = "infoCampana">
+        <div class = "EncabezadoCampana">
+            <img src="/Imagenes/" alt="FotoCampaña">
+            <h3>Nombre campaña
+                @* @Campana.nombre *@
+                </h3>
+        </div>
+        <div class = "infoCampana">
+            <p>
+                Ubicacion
+                @* @Campana.ubicacion *@
+            </p>
+            <p>
+                Telefono
+                @* @Campana.telefono *@
+            </p>
+            <p>
+                mail
+                @* @Campana.mail *@
+            </p>
+            <p>
+                Pagina Web
+                @* @Campana.paginaWeb *@
+            </p>
+        </div>
+        <div class = "descripcion">
+            <p>
+                descripcion
+                @* @Campana.descripcion *@
+            </p>
+        </div>
+</section>

@@ -1,0 +1,30 @@
+@{
+    ViewData["Title"] = "Contactar Campaña";
+}
+<section class = "Contactar">
+    <h1>Contactate con 
+        @* @Campana.nombre *@
+    </h1>
+    <form>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Ayudas con: </label>
+        <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Opciones
+        </a>
+
+        <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Donaciones</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        @* dsp completar *@
+        </ul>
+        </div>
+    </div>
+    <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Mensaje:</label>
+    <input type="text" class="form-control" id="exampleInputPassword1">
+    </div>
+    <button type="submit" class="btn btn-primary">Inciar Sesion</button>
+    </form>
+</section>

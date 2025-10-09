@@ -15,6 +15,28 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View("Registrate");
-    }
+        return View("VerCampana");
+    }    
+    // public IActionResult CrearUsuario(string)
+    // public IActionResult ValidarUsuario(string usuario, string clave){
+    //     int id = BD.Login(usuario, clave);
+
+    //     if(id == 0){
+    //         ViewBag.segundoIntento = true;
+    //         return View ("SignIn");
+    //     }
+    //     else{
+    //         HttpContext.Session.SetString("usuario", Objetos.ObjectToString(BD.GetUsuario(id)));
+    //         ViewBag.usuario = BD.GetUsuario(id);
+    //         return View("Index");
+    //     }
+    // }
+    // public IActionResult SignIn(){
+    //     ViewBag.segundoIntento = false;
+    //     return View();
+    // }
+    // public IActionResult Desloguearse(){
+    //     HttpContext.Session.Remove("usuario");
+    //     return View("Index");
+    // }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lB5UCeMyGkDur6kQ8Duj+pNQA9c0ac4mQrMBhwIBasI=",
+  "Hash": "XhQzumxF3wNuJ6wLqqQbWq5QDBUjXV17XlmehzTQLCc=",
   "Source": "AyudActiva",
   "BasePath": "_content/AyudActiva",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\bd\\BD.sql",
+      "SourceId": "AyudActiva",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "BasePath": "_content/AyudActiva",
+      "RelativePath": "bd/BD.sql",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bd\\BD.sql"
+    },
     {
       "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\css\\site.css",
       "SourceId": "AyudActiva",
