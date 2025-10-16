@@ -1,10 +1,11 @@
 using Newtonsoft.Json;
 
-public class Usuario{
-    public int IDUsuario;
+public class ONG{
+
+    public int IDOng;
     public string nombre;
-    public string apellido;
     public string email;
     public string contrasena;
-    public int edad;
+    public string telefono;
+     
 }

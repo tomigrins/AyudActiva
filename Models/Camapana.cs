@@ -1,12 +1,16 @@
 using Newtonsoft.Json;
 
 public class Campana{
-    public int id;
+    public int IDCampana;
     public string nombre;
-    public string ubicacion;
-    public int telefono;
-    public string mail;
-    public string paginaWeb;
     public string descripcion;
-    public string foto;
-}
+    public string ubicacion;
+    public DateTime fechaInicio;
+    public DateTime fechaFin;
+    public DateTime horario;
+    public string estado;
+    public string imagenUrl;
+    public int meta;
+    public string categoria;
+    public int IDDonaciones;
+    public int IDOng;}
