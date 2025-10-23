@@ -17,8 +17,18 @@ body {
 
 /* Index */
 /* Banner */
-.Banner{
-  background-image: url("wwwroot/Imagenes/Banner.jpg") !important;
+.Banner {
+background-image: url("/Imagenes/Banner.jpg");
+background-size: cover;
+height: 300px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-position: center; 
+/* despues ver lo de la imagen */
+}
+.Banner h1, p{
+  margin-left: 2%;
 }
 
 /* InfoCentral */
@@ -66,19 +76,16 @@ body {
   opacity: 0.8;
 }
 
-/* Espaciado entre bloques */
 .seccion-intercalada .row {
   margin-bottom: 5%;
 }
 
-/* Imagen y texto alineados correctamente */
 .seccion-intercalada .col-md-6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .icono {
     width: 30%;
@@ -92,6 +99,109 @@ body {
   }
   .seccion-intercalada p {
     font-size: 0.95rem;
+  }
+}
+
+
+/* Proyectos */
+.proyectos {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 3% 0;
+  text-align: center;
+}
+
+.proyectos h2 {
+  font-weight: 700;
+  margin-bottom: 5%;
+}
+
+.proyectos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 8%;
+}
+
+.proyecto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.proyectos-lista .proyecto:nth-child(odd) {
+  flex-direction: row;
+}
+
+.proyectos-lista .proyecto:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.proyecto-img {
+  width: 45%;
+}
+
+.proyecto-img img {
+  width: 100%;
+  border-radius: 5%;
+  object-fit: cover;
+  height: auto;
+}
+
+/* Información */
+.proyecto-info {
+  width: 45%;
+  text-align: left;
+}
+
+.categoria {
+  font-size: 90%;
+  opacity: 0.7;
+  margin-bottom: 2%;
+}
+
+.proyecto-info h3 {
+  font-size: 150%;
+  font-weight: 700;
+  margin: 1% 0;
+}
+
+.proyecto-info hr {
+  width: 100%;
+  margin: 2% 0 4%;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.descripcion {
+  font-size: 95%;
+  line-height: 1.6;
+  margin-bottom: 6%;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 2% 6%;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .proyecto {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .proyecto-img,
+  .proyecto-info {
+    width: 100%;
+  }
+
+  .proyecto-info {
+    text-align: center;
+    margin-top: 5%;
   }
 }
 
