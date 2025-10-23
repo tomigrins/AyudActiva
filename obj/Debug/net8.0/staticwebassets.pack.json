@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\Banner.jpg",
+      "PackagePath": "staticwebassets\\Imagenes\\Banner.jpg"
+    },
+    {
       "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\bd\\BD.sql",
       "PackagePath": "staticwebassets\\bd\\BD.sql"
     },

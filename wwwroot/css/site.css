@@ -15,16 +15,84 @@ body {
 }
 
 
-footer {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #f8f9fa;
-  border-top: 1px solid #e9ecef;
+/* Index */
+/* Banner */
+.Banner{
+  background-image: url("wwwroot/Imagenes/Banner.jpg") !important;
 }
-.Grid-Hor h1{
+
+/* InfoCentral */
+.InfoCentral{
+  text-align: center !important;
+}
+.InfoCentral hr {
+  width: 75%;
+  margin: 20px auto;
+}
+
+/* Intercalado */
+.seccion-intercalada {
   text-align: center;
+  padding: 5% 0;
 }
-.card {
-  position: center !important;
-  width: 100% !important;
+
+.icono {
+  width: 20%;
+  max-width: 120px;
+  height: auto;
 }
+
+.seccion-intercalada h4 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.seccion-intercalada p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.boton-azul {
+  background: none;
+  border: none;
+  padding: 1% 4%;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.boton-azul:hover {
+  opacity: 0.8;
+}
+
+/* Espaciado entre bloques */
+.seccion-intercalada .row {
+  margin-bottom: 5%;
+}
+
+/* Imagen y texto alineados correctamente */
+.seccion-intercalada .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .icono {
+    width: 30%;
+    margin-bottom: 3%;
+  }
+  .seccion-intercalada {
+    padding: 10% 5%;
+  }
+  .seccion-intercalada h4 {
+    font-size: 1.1rem;
+  }
+  .seccion-intercalada p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Reseñas */
