@@ -206,3 +206,521 @@ background-position: center;
 }
 
 /* Reseñas */
+
+
+
+/* Financiar */
+.Financiar {
+  font-family: "Poppins", sans-serif;
+  color: #1e1e8f;
+  background-color: #fff;
+  width: 80%;
+  margin: 5% auto;
+  text-align: center;
+}
+
+.Financiar h2 {
+  font-size: 2vw;
+  font-weight: 600;
+  margin-bottom: 1%;
+}
+
+.Financiar .descripcion {
+  font-size: 1vw;
+  color: #333;
+  width: 80%;
+  margin: 0 auto 4%;
+  line-height: 1.5;
+}
+
+.Financiar .contenedor-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #ffffff;
+  border-radius: 2%;
+  padding: 3% 5%;
+  margin-bottom: 3%;
+  box-shadow: 0 0.5% 2% rgba(0, 0, 0, 0.05);
+}
+
+.Financiar .col-izquierda {
+  width: 60%;
+  text-align: left;
+}
+
+.Financiar .col-derecha {
+  width: 35%;
+  text-align: left;
+}
+
+.Financiar .label-principal {
+  display: block;
+  font-weight: 600;
+  font-size: 1vw;
+  margin-bottom: 1%;
+  color: #1e1e8f;
+}
+
+.Financiar input[type="number"],
+.Financiar select {
+  width: 100%;
+  padding: 1.2% 2%;
+  border: 0.1vw solid #ccc;
+  border-radius: 1vw;
+  font-size: 1vw;
+  margin-bottom: 2%;
+  outline: none;
+}
+
+.Financiar .frecuencia {
+  display: flex;
+  gap: 5%;
+  margin-bottom: 2%;
+}
+
+.Financiar .frecuencia label {
+  font-size: 1vw;
+  color: #1e1e8f;
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+
+.Financiar .metodo-titulo {
+  font-weight: 600;
+  margin-bottom: 5%;
+  color: #1e1e8f;
+  font-size: 1vw;
+}
+
+.Financiar .metodos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3%;
+  flex-wrap: wrap;
+}
+
+.Financiar .metodos img {
+  width: 18%;
+  height: auto;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 1%;
+  box-shadow: 0 0.3vw 0.8vw rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.Financiar .metodos img:hover {
+  transform: scale(1.1);
+}
+
+.Financiar .btn-confirmar {
+  background-color: #dbe4ff;
+  color: #1e1e8f;
+  border: none;
+  border-radius: 0.8vw;
+  padding: 1.5% 5%;
+  font-size: 1vw;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.1);
+}
+
+.Financiar .btn-confirmar:hover {
+  background-color: #b8c9ff;
+}
+
+/* Campana */
+.Campana {
+  font-family: "Poppins", sans-serif;
+  width: 80%;
+  margin: 5% auto;
+  color: #1e1e8f;
+  background-color: #fff;
+}
+
+.Campana .encabezado {
+  position: relative;
+  width: 100%;
+  height: 35vh;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Children_learning_together.jpg/1200px-Children_learning_together.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 2%;
+  overflow: hidden;
+}
+
+.Campana .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 80, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.Campana .overlay h2 {
+  font-size: 2.2vw;
+  font-weight: 600;
+  margin-bottom: 1%;
+}
+
+.Campana .overlay span {
+  color: #f2f2ff;
+  font-style: italic;
+}
+
+.Campana .overlay p {
+  font-size: 1vw;
+  font-weight: 300;
+}
+
+.Campana .contenido {
+  margin-top: 5%;
+  margin-bottom: 3%;
+  color: #333;
+  font-size: 1vw;
+  line-height: 1.5;
+}
+
+.Campana .contenido p {
+  margin-bottom: 1.5%;
+}
+
+.Campana .tarjetas {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2%;
+  margin-bottom: 3%;
+}
+
+.Campana .tarjeta {
+  width: 31%;
+  background-color: #fafbff;
+  border: 0.1vw solid #e0e0ff;
+  border-radius: 1vw;
+  padding: 2%;
+  box-shadow: 0 0.3vw 0.8vw rgba(0, 0, 0, 0.05);
+  text-align: left;
+  font-size: 0.95vw;
+  color: #1e1e8f;
+}
+
+.Campana .tarjeta h3 {
+  font-size: 1.1vw;
+  font-weight: 600;
+  margin-bottom: 3%;
+  color: #1e1e8f;
+}
+
+.Campana .tarjeta ul {
+  padding-left: 5%;
+  list-style: disc;
+  color: #333;
+}
+
+.Campana .tarjeta li {
+  margin-bottom: 2%;
+}
+
+.Campana .tarjeta .nota {
+  font-size: 0.85vw;
+  color: #777;
+  margin-top: 4%;
+}
+
+.Campana .organiza {
+  text-align: center;
+  font-size: 0.9vw;
+  margin-top: 3%;
+  border-top: 0.1vw solid #ddd;
+  padding-top: 1.5%;
+  color: #333;
+}
+
+
+/* Historial */
+.Historial {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #1a1a7c;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.Historial h1 {
+  text-align: center;
+  font-size: 2vw;
+  font-weight: 600;
+  width: 85%;
+  margin-bottom: 2%;
+  border-bottom: 0.1vw solid #d2d2f0;
+  padding-bottom: 1%;
+}
+
+.section-fecha {
+  width: 85%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  font-size: 1vw;
+  color: #a0a0a0;
+  font-weight: 400;
+}
+
+.card {
+  width: 85%;
+  background-color: #ffffff;
+  border-radius: 1vw;
+  border: 0.1vw solid #ddd;
+  box-shadow: 0 0.3vw 0.6vw rgba(0, 0, 0, 0.1);
+  padding: 1.5% 2%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.15);
+}
+
+.card-content {
+  width: 75%;
+}
+
+.card h2 {
+  font-size: 1.1vw;
+  font-weight: 600;
+  margin: 0 0 0.5% 0;
+  color: #1a1a7c;
+}
+
+.card p {
+  font-size: 0.9vw;
+  margin: 0;
+  color: #8888aa;
+}
+
+.btn-vermas {
+  background-color: #dce8ff;
+  border: none;
+  border-radius: 0.5vw;
+  color: #1a1a7c;
+  font-weight: 500;
+  font-size: 0.9vw;
+  padding: 1.5% 5%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-vermas:hover {
+  background-color: #c6d8ff;
+  transform: scale(1.03);
+}
+
+/* IniciarSesion */
+.IniciarSesion {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #1a1a7c;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 4%;
+}
+
+.IniciarSesion h1 {
+  font-size: 2vw;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2%;
+  width: 80%;
+  border-bottom: 0.1vw solid #d2d2f0;
+  padding-bottom: 1%;
+}
+
+.login-box {
+  width: 40%;
+  background-color: #ffffff;
+  border-radius: 1.5vw;
+  box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.15);
+  padding: 3% 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.login-box form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 3%;
+  margin-bottom: 4%;
+  border-radius: 0.5vw;
+  border: 0.1vw solid #ccc;
+  font-size: 1vw;
+  outline: none;
+}
+
+.login-box input:focus {
+  border-color: #aabaff;
+  box-shadow: 0 0 0.5vw rgba(170, 186, 255, 0.5);
+}
+
+.btn-continuar {
+  background-color: #dce8ff;
+  color: #1a1a7c;
+  border: none;
+  border-radius: 0.5vw;
+  font-weight: 500;
+  font-size: 1vw;
+  padding: 2% 8%;
+  cursor: pointer;
+  margin-top: 2%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-continuar:hover {
+  background-color: #c6d8ff;
+  transform: scale(1.03);
+}
+
+.registro-texto {
+  margin-top: 3%;
+  font-size: 0.9vw;
+  color: #555;
+}
+
+.registro-texto a {
+  color: #1a1a7c;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.registro-texto a:hover {
+  text-decoration: underline;
+}
+
+/* Registrate */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #1c1c8d;
+  margin: 0;
+  text-align: center;
+}
+
+.registrar-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registrar-titulo {
+  margin-top: 3%;
+  font-weight: 500;
+  border-bottom: 0.05em solid #dcdcdc;
+  width: 90%;
+  padding-bottom: 1%;
+}
+
+.registrar-tabs {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+.registrar-tab {
+  background: none;
+  border: none;
+  font-size: 1em;
+  color: #1c1c8d;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.registrar-tab--active {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.registrar-form-container {
+  margin-top: 2%;
+  border: 0.1em solid #ccc;
+  border-radius: 1em;
+  width: 40%;
+  padding: 2%;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
+}
+
+.registrar-form {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.registrar-form--visible {
+  display: flex;
+}
+
+.registrar-input {
+  width: 80%;
+  padding: 2%;
+  border: 0.05em solid #ccc;
+  border-radius: 0.5em;
+  font-size: 1em;
+}
+
+.registrar-boton {
+  margin-top: 2%;
+  padding: 2% 5%;
+  background-color: #d3e2ff;
+  border: none;
+  border-radius: 0.5em;
+  color: #1c1c8d;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.registrar-boton:hover {
+  background-color: #c4d6ff;
+}
+
+.registrar-texto {
+  margin-top: 2%;
+  font-size: 0.9em;
+  color: #1c1c8d;
+}
+
+.registrar-link {
+  color: #1c1c8d;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.registrar-link:hover {
+  text-decoration: underline;
+}

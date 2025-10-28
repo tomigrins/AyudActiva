@@ -1,0 +1,39 @@
+@{
+    ViewData["Title"] = "Registrar";
+}
+<section id="registrar">
+    <h2>Crear Sesión</h2>
+    <div class="tabs">
+      <button id="tab-donante" class="active">Donante</button>
+      <button id="tab-ong">ONG</button>
+    </div>
+
+    <div class="form-container">
+      <!-- Formulario Donante -->
+      <form id="form-donante" class="formulario visible">
+        <input type="text" placeholder="Nombre">
+        <input type="text" placeholder="Apellido">
+        <input type="text" placeholder="Año de nacimiento">
+        <input type="text" placeholder="Teléfono">
+        <input type="email" placeholder="Correo">
+        <input type="password" placeholder="Contraseña">
+        <input type="password" placeholder="Reingresar contraseña">
+        <button type="submit">Continuar</button>
+        <p>¿Ya tenés una cuenta? <a href="#">Inicia Sesión</a></p>
+      </form>
+
+      <!-- Formulario ONG -->
+      <form id="form-ong" class="formulario">
+        <input type="text" placeholder="Nombre de la organización">
+        <input type="text" placeholder="CUIT">
+        <input type="text" placeholder="Teléfono">
+        <input type="email" placeholder="Correo">
+        <input type="password" placeholder="Contraseña">
+        <input type="password" placeholder="Reingresar contraseña">
+        <button type="submit">Continuar</button>
+        <p>¿Ya tenés una cuenta? <a href="#">Inicia Sesión</a></p>
+      </form>
+    </div>
+  </section>
+
+  <script src="Script.js"></script>

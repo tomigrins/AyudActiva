@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "Financiar";
+}
+<section class="Financiar">
+  <h2>Ayuda a ayudar</h2>
+
+  <p class="descripcion">
+    Cada aporte multiplica el impacto. Tu donación permite que más campañas sigan transformando realidades.
+    Elegí el monto y el destino, y <strong>sé parte del cambio.</strong>
+  </p>
+
+  <div class="contenedor-form">
+    <div class="col-izquierda">
+      <label for="monto" class="label-principal">Elegí cómo querés ser parte del cambio</label>
+      <input type="number" id="monto" placeholder="Monto">
+
+      <div class="frecuencia">
+        <label><input type="radio" name="frecuencia" checked> Por única vez</label>
+        <label><input type="radio" name="frecuencia"> Mensualmente</label>
+      </div>
+
+      <select id="destino">
+        <option value="">Destino</option>
+        <option value="educacion">Educación</option>
+        <option value="salud">Salud</option>
+        <option value="comunidad">Comunidad</option>
+      </select>
+    </div>
+
+    <div class="col-derecha">
+      <p class="metodo-titulo">Método de pago</p>
+      <div class="metodos">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Banco_Santander_Logotipo.svg" alt="Santander">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/PayPal_logo_2014.svg" alt="Transferencia">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/MODO_logo.png" alt="Modo">
+      </div>
+    </div>
+  </div>
+
+  <button class="btn-confirmar">Confirmar mi aporte</button>
+</section>

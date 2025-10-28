@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AyudActiva")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+804c95f6550c5f858f4e4977e139d467c1b8bd1e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+718a884a150547c484be8cf0ae0b7c0b09361a22")]
 [assembly: System.Reflection.AssemblyProductAttribute("AyudActiva")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AyudActiva")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

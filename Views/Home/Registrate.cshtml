@@ -1,30 +1,44 @@
 @{
     ViewData["Title"] = "Registrate";
 }
-<section class = "Form">
+  <section id="registrar" class="registrar-section">
+    <h2 class="registrar-titulo">Crear Sesión</h2>
 
-    <div class="card" style="width: 18rem;">
-    <div class="card-body">
-    <form>
-    <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Nombre de usuario:</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div class="registrar-tabs">
+      <button class="registrar-tab registrar-tab--active" id="registrar-tab-donante">Donante</button>
+      <button class="registrar-tab" id="registrar-tab-ong">ONG</button>
     </div>
-    <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Correo:</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+    <div class="registrar-form-container">
+      <!-- Formulario Donante -->
+      <form class="registrar-form registrar-form--visible" id="registrar-form-donante">
+        <input class="registrar-input" type="text" placeholder="Nombre">
+        <input class="registrar-input" type="text" placeholder="Apellido">
+        <input class="registrar-input" type="text" placeholder="Año de nacimiento">
+        <input class="registrar-input" type="text" placeholder="Teléfono">
+        <input class="registrar-input" type="email" placeholder="Correo">
+        <input class="registrar-input" type="password" placeholder="Contraseña">
+        <input class="registrar-input" type="password" placeholder="Reingresar contraseña">
+        <button class="registrar-boton" type="submit">Continuar</button>
+        <p class="registrar-texto">
+          ¿Ya tenés una cuenta? <a href="#" class="registrar-link">Inicia Sesión</a>
+        </p>
+      </form>
+
+      <!-- Formulario ONG -->
+      <form class="registrar-form" id="registrar-form-ong">
+        <input class="registrar-input" type="text" placeholder="Nombre de la organización">
+        <input class="registrar-input" type="text" placeholder="CUIT">
+        <input class="registrar-input" type="text" placeholder="Teléfono">
+        <input class="registrar-input" type="email" placeholder="Correo">
+        <input class="registrar-input" type="password" placeholder="Contraseña">
+        <input class="registrar-input" type="password" placeholder="Reingresar contraseña">
+        <button class="registrar-boton" type="submit">Continuar</button>
+        <p class="registrar-texto">
+          ¿Ya tenés una cuenta? <a href="#" class="registrar-link">Inicia Sesión</a>
+        </p>
+      </form>
     </div>
-    <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Contraseña:</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Confirmar contraseña:</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-    </div>
-    <button type="submit" class="btn btn-primary">Inciar Sesion:</button>
-    </form>
-    </div>
-    </div>
-    <p>¿ya tenes una cuenta? <a href="Completar">Inciar Sesion</a></p>
-</section>
+  </section>
+
+  <script src="registrar.js"></script>
