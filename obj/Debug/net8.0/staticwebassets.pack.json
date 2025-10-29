@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets\\Imagenes\\Banner.jpg"
     },
     {
+      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\Iconografia1-AyudActiva.jpg",
+      "PackagePath": "staticwebassets\\Imagenes\\Iconografia1-AyudActiva.jpg"
+    },
+    {
+      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\Iconografia3-AyudActiva.jpg",
+      "PackagePath": "staticwebassets\\Imagenes\\Iconografia3-AyudActiva.jpg"
+    },
+    {
+      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\Iconografia4-AyudActiva.jpg",
+      "PackagePath": "staticwebassets\\Imagenes\\Iconografia4-AyudActiva.jpg"
+    },
+    {
       "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\bd\\BD.sql",
       "PackagePath": "staticwebassets\\bd\\BD.sql"
     },

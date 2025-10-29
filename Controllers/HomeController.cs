@@ -15,7 +15,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View("Registrate");
+        return View();
     }    
     // public IActionResult CrearUsuario(string)
     // public IActionResult ValidarUsuario(string usuario, string clave){

@@ -1,117 +1,96 @@
 ﻿@{
     ViewData["Title"] = "Index";
 }
-<section class = "Banner">
+<!-- ===== Banner ===== -->
+<section class="banner">
+  <div class="banner-text">
     <h1>Conectamos personas con causas que transforman comunidades.</h1>
-    <p>Sumate. Comporti tu tiempo, tus ideas y/o recursos.</p>
+    <p>Sumate. Compartí tu tiempo, tus ideas y tus recursos.</p>
+  </div>
 </section>
 
-
-
-<section class = "InfoCentral">
-    <div>
-        <h1>Creemos en una comunidad que se activa.</h1>
-        <p>AyudActiva surge para facilitar el encuentro entre quienes quieren aportar y las organizaciones que necesitan apoyo. Promovemos la solidaridad como hábito cotidiano, accesible y transformador.</p>
-    </div>
-    <div>
-        <button class="btn btn-primary" type="button">Nuesta historia</button>
-    </div>
-    <hr>
+<!-- ===== Comunidad ===== -->
+<section class="comunidad">
+  <h2>Creemos en una comunidad que se activa.</h2>
+  <p>
+    AyudActiva surge para facilitar el encuentro entre quienes quieren aportar y las organizaciones que necesitan apoyo.
+    Promovemos la inclusión social mediante acciones solidarias y colaborativas.
+  </p>
+  <button>Nuestro propósito</button>
 </section>
 
-
-
-<section class="container my-5 seccion-intercalada">
-  <div class="row align-items-center mb-5">
-    <div class="col-md-6 text-center text-md-start">
-      <img src="icono-bombilla.png" alt="Explorá causas" class="icono">
-    </div>
-    <div class="col-md-6">
-      <h4><strong>Explorá causas.</strong></h4>
+<!-- ===== Acciones ===== -->
+<section class="acciones">
+  <div class="accion">
+    <img src="~/Imagenes/Iconografia3-AyudActiva.jpg" alt="icono causas">
+    <div>
+      <h3>Explorá causas.</h3>
       <p>Encontrá campañas y organizaciones que te inspiren.</p>
     </div>
   </div>
 
-  <div class="row align-items-center mb-5 flex-md-row-reverse">
-    <div class="col-md-6 text-center text-md-end">
-      <img src="icono-globo.png" alt="Actuá" class="icono">
-    </div>
-    <div class="col-md-6">
-      <h4><strong>Actuá:</strong></h4>
+  <div class="accion">
+    <img src="~/Imagenes/Iconografia4-AyudActiva.jpg" alt="icono actuar">
+    <div>
+      <h3>Actuá.</h3>
       <p>Sumate y hacé posible el cambio en tu comunidad.</p>
     </div>
   </div>
 
-  <div class="row align-items-center mb-5">
-    <div class="col-md-6 text-center text-md-start">
-      <img src="icono-mano.png" alt="Conectá" class="icono">
-    </div>
-    <div class="col-md-6">
-      <h4><strong>Conectá.</strong></h4>
-      <p>Elegí cómo participar. Voluntariado, financiamiento o donación.</p>
+  <div class="accion">
+    <img src="~/Imagenes/Iconografia1-AyudActiva.jpg" alt="icono conectar">
+    <div>
+      <h3>Conectá.</h3>
+      <p>Dejá tu compromiso: voluntariado, financiamiento o donación.</p>
     </div>
   </div>
 
-  <div class="text-center">
-    <button class="btn btn-light boton-azul">Empezá ahora</button>
+  <button>Empezá ahora</button>
+</section>
+
+<!-- ===== Proyectos ===== -->
+<section class="proyectos">
+  <h2>Proyectos que ya están cambiando realidades</h2>
+
+  <div class="tarjeta">
+    <img src="ruta/perrito.png" alt="Huellitas Happy">
+    <div class="texto">
+      <h3>Huellitas Happy</h3>
+      <p>
+        Una campaña que promueve el bienestar y felicidad de los animales rescatados. Sumate a esta causa para seguir
+        generando hogares felices.
+      </p>
+      <button>Participar</button>
+    </div>
+  </div>
+
+  <div class="tarjeta">
+    <img src="ruta/utiles.png" alt="Seamos útiles">
+    <div class="texto">
+      <h3>Seamos útiles</h3>
+      <p>
+        Colecta solidaria para incluir útiles escolares y donarlos a estudiantes de comunidades vulnerables. Ayudemos a
+        potenciar la educación.
+      </p>
+      <button>Participar</button>
+    </div>
   </div>
 </section>
 
-
-  <section class="proyectos">
-    <h2>Proyectos que ya estan cambiando realidades</h2>
-
-    <div class="proyectos-lista">
-
-      <div class="proyecto">
-        <div class="proyecto-img">
-          <img src="perro.jpg" alt="Huellitas Happy">
-        </div>
-        <div class="proyecto-info">
-          <p class="categoria">Animales</p>
-          <h3>Huellitas Happy</h3>
-          <hr>
-          <p class="descripcion">
-            Una campaña que promueve el bienestar y la felicidad de los perros mediante jornadas de adopción, atención veterinaria gratuita, donación de alimento y actividades educativas.
-          </p>
-          <button class="btn">Participar</button>
-        </div>
-      </div>
-
-      <div class="proyecto">
-        <div class="proyecto-img">
-          <img src="utiles.jpg" alt="Seamos útiles">
-        </div>
-        <div class="proyecto-info">
-          <p class="categoria">Educación</p>
-          <h3>Seamos útiles</h3>
-          <hr>
-          <p class="descripcion">
-            Colecta solidaria para reunir útiles escolares y donarlos a escuelas que los necesitan. Cada aporte ayuda a que más chicos puedan comenzar las clases con las mismas oportunidades.
-          </p>
-          <button class="btn">Participar</button>
-        </div>
-      </div>
-
-    </div> <!-- 🔹 cierra proyectos-lista -->
-  </section>
-
-
-
-<section class = "reseñas">
-    <h1>Reseñas</h1>
-    <div class="container text-center">
-  <div class="row">
-    <div class="col">
-      <img src="" alt="Foto-Nicolas">
-      <h3>Nicolas</h3>
-      <p>Encontré mi primera experiencia solidaria gracias a AyudActiva.</p>
+<!-- ===== Reseñas ===== -->
+<section class="resenas">
+  <h2>Reseñas</h2>
+  <div class="personas">
+    <div class="persona">
+      <img src="ruta/persona1.png" alt="Nicolás">
+      <h3>Nicolás</h3>
+      <p>“Participar en las campañas me permitió conocer personas increíbles y ayudar de verdad.”</p>
     </div>
-    <div class="col">
-      <img src="" alt="Foto-Ambar">
-      <h3>Ambar</h3>
-      <p>Ahora es más fácil encontrar personas que quieran ayudar.</p>
+
+    <div class="persona">
+      <img src="ruta/persona2.png" alt="Amber">
+      <h3>Amber</h3>
+      <p>“AyudActiva me enseñó que con poco tiempo se pueden hacer grandes cambios.”</p>
     </div>
   </div>
-</div>
 </section>
