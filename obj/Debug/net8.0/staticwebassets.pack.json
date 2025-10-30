@@ -1,95 +1,95 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\Banner.jpg",
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\Imagenes\\Banner.jpg",
       "PackagePath": "staticwebassets\\Imagenes\\Banner.jpg"
     },
     {
-      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\Banner.png",
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\Imagenes\\Banner.png",
       "PackagePath": "staticwebassets\\Imagenes\\Banner.png"
     },
     {
-      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\Iconografia1-AyudActiva.jpg",
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\Imagenes\\Iconografia1-AyudActiva.jpg",
       "PackagePath": "staticwebassets\\Imagenes\\Iconografia1-AyudActiva.jpg"
     },
     {
-      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\Iconografia3-AyudActiva.jpg",
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\Imagenes\\Iconografia3-AyudActiva.jpg",
       "PackagePath": "staticwebassets\\Imagenes\\Iconografia3-AyudActiva.jpg"
     },
     {
-      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\Iconografia4-AyudActiva.jpg",
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\Imagenes\\Iconografia4-AyudActiva.jpg",
       "PackagePath": "staticwebassets\\Imagenes\\Iconografia4-AyudActiva.jpg"
     },
     {
-      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\mbappe.webp",
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\Imagenes\\mbappe.webp",
       "PackagePath": "staticwebassets\\Imagenes\\mbappe.webp"
     },
     {
-      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\bd\\BD.sql",
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\bd\\BD.sql",
       "PackagePath": "staticwebassets\\bd\\BD.sql"
     },
     {
-      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\js\\Script.js",
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\js\\Script.js",
       "PackagePath": "staticwebassets\\js\\Script.js"
     },
     {
-      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

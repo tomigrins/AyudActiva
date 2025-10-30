@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IaQFnAbKdOTDrfIm8z/np67OVUDKultDfZ32J0o3eXg=",
+  "Hash": "DnSgt6hKyit/6y6yPNTRAz8pLN3CTp5nbT9///00NNk=",
   "Source": "AyudActiva",
   "BasePath": "_content/AyudActiva",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "AyudActiva\\wwwroot",
       "Source": "AyudActiva",
-      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
       "BasePath": "_content/AyudActiva",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\bd\\BD.sql",
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\bd\\BD.sql",
       "SourceId": "AyudActiva",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
       "BasePath": "_content/AyudActiva",
       "RelativePath": "bd/BD.sql",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\bd\\BD.sql"
     },
     {
-      "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\css\\site.css",
       "SourceId": "AyudActiva",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
       "BasePath": "_content/AyudActiva",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\favicon.ico",
       "SourceId": "AyudActiva",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
       "BasePath": "_content/AyudActiva",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\Banner.jpg",
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\Imagenes\\Banner.jpg",
       "SourceId": "AyudActiva",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
       "BasePath": "_content/AyudActiva",
       "RelativePath": "Imagenes/Banner.jpg",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\Imagenes\\Banner.jpg"
     },
     {
-      "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\Banner.png",
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\Imagenes\\Banner.png",
       "SourceId": "AyudActiva",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
       "BasePath": "_content/AyudActiva",
       "RelativePath": "Imagenes/Banner.png",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\Imagenes\\Banner.png"
     },
     {
-      "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\Iconografia1-AyudActiva.jpg",
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\Imagenes\\Iconografia1-AyudActiva.jpg",
       "SourceId": "AyudActiva",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
       "BasePath": "_content/AyudActiva",
       "RelativePath": "Imagenes/Iconografia1-AyudActiva.jpg",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\Imagenes\\Iconografia1-AyudActiva.jpg"
     },
     {
-      "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\Iconografia3-AyudActiva.jpg",
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\Imagenes\\Iconografia3-AyudActiva.jpg",
       "SourceId": "AyudActiva",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
       "BasePath": "_content/AyudActiva",
       "RelativePath": "Imagenes/Iconografia3-AyudActiva.jpg",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\Imagenes\\Iconografia3-AyudActiva.jpg"
     },
     {
-      "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\Iconografia4-AyudActiva.jpg",
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\Imagenes\\Iconografia4-AyudActiva.jpg",
       "SourceId": "AyudActiva",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
       "BasePath": "_content/AyudActiva",
       "RelativePath": "Imagenes/Iconografia4-AyudActiva.jpg",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\Imagenes\\Iconografia4-AyudActiva.jpg"
     },
     {
-      "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\mbappe.webp",
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\Imagenes\\mbappe.webp",
       "SourceId": "AyudActiva",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
       "BasePath": "_content/AyudActiva",
       "RelativePath": "Imagenes/mbappe.webp",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\Imagenes\\mbappe.webp"
     },
     {
-      "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\js\\Script.js",
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\js\\Script.js",
       "SourceId": "AyudActiva",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
       "BasePath": "_content/AyudActiva",
       "RelativePath": "js/Script.js",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Script.js"
     },
     {
-      "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\js\\site.js",
       "SourceId": "AyudActiva",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
       "BasePath": "_content/AyudActiva",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "AyudActiva",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
       "BasePath": "_content/AyudActiva",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "AyudActiva",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
       "BasePath": "_content/AyudActiva",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "AyudActiva",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
       "BasePath": "_content/AyudActiva",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "AyudActiva",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
       "BasePath": "_content/AyudActiva",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "AyudActiva",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
       "BasePath": "_content/AyudActiva",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "AyudActiva",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
       "BasePath": "_content/AyudActiva",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "AyudActiva",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
       "BasePath": "_content/AyudActiva",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "AyudActiva",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
       "BasePath": "_content/AyudActiva",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "AyudActiva",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
       "BasePath": "_content/AyudActiva",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "AyudActiva",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
       "BasePath": "_content/AyudActiva",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "AyudActiva",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
       "BasePath": "_content/AyudActiva",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "AyudActiva",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
       "BasePath": "_content/AyudActiva",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",

@@ -17,26 +17,51 @@ public class HomeController : Controller
     {
         return View("Index");
     }    
-    // public IActionResult CrearUsuario(string)
-    // public IActionResult ValidarUsuario(string usuario, string clave){
-    //     int id = BD.Login(usuario, clave);
 
-    //     if(id == 0){
-    //         ViewBag.segundoIntento = true;
-    //         return View ("SignIn");
-    //     }
-    //     else{
-    //         HttpContext.Session.SetString("usuario", Objetos.ObjectToString(BD.GetUsuario(id)));
-    //         ViewBag.usuario = BD.GetUsuario(id);
-    //         return View("Index");
-    //     }
-    // }
-    // public IActionResult SignIn(){
-    //     ViewBag.segundoIntento = false;
-    //     return View();
-    // }
-    // public IActionResult Desloguearse(){
-    //     HttpContext.Session.Remove("usuario");
-    //     return View("Index");
-    // }
+ public IActionResult Login()
+    {
+        return View("Login");
+    }
+
+    [HttpPost]
+    public IActionResult LoginGuardar(string username, string contraseña)
+    {   
+        ViewBag.mensajeError = "";
+        string devolver = "Login";
+        string devolverController = "UserAccount";
+        Usuario usuario = BD.Login(username, contraseña);
+        if(usuario != null){
+            devolver = "Index";
+            devolverController = "Home";
+        HttpContext.Session.SetString("Usuario", Objetos.ObjectToString(usuario)); 
+        }else{
+            ViewBag.mensajeError = "Usuario o clave incorrecto";
+        }
+        return RedirectToAction(devolver, devolverController);
+    }
+
+    public IActionResult Registro()
+    {
+        return View("Registro");
+    }
+    [HttpPost]
+    public IActionResult RegistroGuardar(string nombre, string apellido,string username, string email, string contrasena, DateTime fechaNacimiento)
+    {
+        string devolver = "Registro";
+        string confirmarContrasena = contrasena;
+        if (contrasena != confirmarContrasena){
+            ViewBag.mensajeError = "LAS CONTRASEÑAS NO COINCIDEN";}
+        else if (nombre != null && apellido != null && username != null && contrasena != null && email != null && fechaNacimiento != null){
+        BD.Registro(nombre, apellido, username, contrasena, email, fechaNacimiento);
+        HttpContext.Session.SetString("Usuario", Objetos.ObjectToString(BD.Login(username, contrasena))); 
+        devolver = "Index";
+        }
+        return RedirectToAction(devolver, "Home");
+    }
+
+    public IActionResult Desloguearse(){
+        HttpContext.Session.Remove("Usuario");
+        return View("Index");
+    }
+
 }
