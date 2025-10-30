@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "I4jkQ9JM00z832dzhVfMxLvGdGeFQTmBm/czc+Pwq14=",
+  "Hash": "IaQFnAbKdOTDrfIm8z/np67OVUDKultDfZ32J0o3eXg=",
   "Source": "AyudActiva",
   "BasePath": "_content/AyudActiva",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Imagenes\\Banner.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\Banner.png",
+      "SourceId": "AyudActiva",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\",
+      "BasePath": "_content/AyudActiva",
+      "RelativePath": "Imagenes/Banner.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagenes\\Banner.png"
     },
     {
       "Identity": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\Iconografia1-AyudActiva.jpg",

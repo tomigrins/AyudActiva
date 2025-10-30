@@ -15,7 +15,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View("Login");
+        return View("Index");
     }    
     // public IActionResult CrearUsuario(string)
     // public IActionResult ValidarUsuario(string usuario, string clave){

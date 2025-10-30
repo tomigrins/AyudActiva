@@ -18,7 +18,7 @@ body {
 /* Index */
 /* Banner  */
 .banner {
-  background-image: url("ruta/banner.png");
+  background-image: url("/Imagenes/Banner.webp");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -228,7 +228,7 @@ body {
 
 .persona img {
   width: 60%;
-  border-radius: 50%;
+  border-radius: 15px;
   margin-bottom: 5%;
 }
 
