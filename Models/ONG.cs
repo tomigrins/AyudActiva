@@ -2,10 +2,10 @@ using Newtonsoft.Json;
 
 public class ONG{
 
-    public int IDOng;
-    public string nombre;
-    public string email;
-    public string contrasena;
-    public string telefono;
+    public int IDOng{ get; private set; }
+    public string nombre{ get; private set; }
+    public string email{ get; private set; }
+    public string contrasena{ get; private set; }
+    public string telefono{ get; private set; }
      
 }
