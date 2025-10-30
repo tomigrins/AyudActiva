@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\Imagenes\\Iconografia4-AyudActiva.jpg"
     },
     {
+      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\mbappe.webp",
+      "PackagePath": "staticwebassets\\Imagenes\\mbappe.webp"
+    },
+    {
       "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\bd\\BD.sql",
       "PackagePath": "staticwebassets\\bd\\BD.sql"
     },

@@ -50,6 +50,10 @@ body {
   text-align: center;
   padding: 4% 10%;
 }
+.comunidad hr{
+  margin-top: 3%;
+  border-top: 5px solid #000000;
+}
 
 .comunidad h2 {
   color: #1e1e8f;
@@ -80,51 +84,60 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4%;
+  gap: 3%;
   padding: 4% 0;
 }
 
 .accion {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 4%;
   width: 70%;
-  border-bottom: 0.5px solid #ccc;
-  padding-bottom: 3%;
+  padding: 2%;
+  gap: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.accion img {
-  width: 8%;
-}
-
-.accion h3 {
-  color: #1e1e8f;
-  font-size: 100%;
-  margin-bottom: 1%;
-}
-
-.accion p {
-  color: #666;
-  font-size: 85%;
-  width: 70%;
-}
-
-/* Intercalado de acciones */
+/* Intercalado */
 .accion:nth-child(even) {
   flex-direction: row-reverse;
   text-align: right;
 }
 
-.acciones button {
-  background-color: #cfe3ff;
-  border: none;
-  padding: 1% 3%;
-  border-radius: 10px;
-  font-weight: bold;
+.accion img {
+  width: 14%;
+  max-width: 130px;
+}
+
+.accion h1 {
+  font-size: 1.3em;
+  color: #333;
+  line-height: 1.4;
+  margin: 0;
+  font-weight: 400;
+}
+
+.accion h1 strong {
   color: #1e1e8f;
-  cursor: pointer;
+  font-weight: 700;
+  margin-right: 0.3em;
+}
+
+.btn-empeza {
+  background-color: #cfe3ff;
+  color: #1e1e8f;
+  font-weight: bold;
+  padding: 1.2% 4%;
+  border-radius: 10px;
+  text-decoration: none;
   margin-top: 3%;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.btn-empeza:hover {
+  background-color: #b5d2ff;
+  transform: translateY(-2px);
 }
 
 /* ===== Proyectos ===== */
@@ -158,7 +171,8 @@ body {
 
 .tarjeta img {
   width: 40%;
-  object-fit: cover;
+  max-width: 25%;
+  height: auto;
 }
 
 .tarjeta .texto {
