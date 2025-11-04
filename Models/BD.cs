@@ -11,7 +11,7 @@ public static class BD
         Usuario aux = new Usuario();
         if (username != null && contrasena != null){
         using (SqlConnection connection = new SqlConnection(_connectionString)){
-        string query = "SELECT * FROM Usuarios WHERE username = @username AND contraseña = @contraseña";
+        string query = "SELECT * FROM Usuarios WHERE username = @username AND contrasena = @contrasena";
         aux = connection.QueryFirstOrDefault<Usuario>(query, new {username, contrasena});
         }         
         }

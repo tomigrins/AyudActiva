@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DnSgt6hKyit/6y6yPNTRAz8pLN3CTp5nbT9///00NNk=",
+  "Hash": "6xTW8U3oypcf/Z24Li6v8vBdHvOF4DMveJiss80LEQk=",
   "Source": "AyudActiva",
   "BasePath": "_content/AyudActiva",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\bd\\BD_Final.sql",
+      "SourceId": "AyudActiva",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
+      "BasePath": "_content/AyudActiva",
+      "RelativePath": "bd/BD_Final.sql",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bd\\BD_Final.sql"
+    },
     {
       "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\bd\\BD.sql",
       "SourceId": "AyudActiva",

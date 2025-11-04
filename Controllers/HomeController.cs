@@ -40,14 +40,18 @@ public class HomeController : Controller
         return RedirectToAction(devolver, devolverController);
     }
 
-    public IActionResult Registro()
+    public IActionResult RegistroUser()
     {
-        return View("Registro");
+        return View("RegistroUser");
+    }
+        public IActionResult RegistroOrg()
+    {
+        return View("RegistroOrg");
     }
     [HttpPost]
-    public IActionResult RegistroGuardar(string nombre, string apellido,string username, string email, string contrasena, DateTime fechaNacimiento)
+    public IActionResult RegistroGuardarUser(string nombre, string apellido,string username, string email, string contrasena, DateTime fechaNacimiento)
     {
-        string devolver = "Registro";
+        string devolver = "RegistroUser";
         string confirmarContrasena = contrasena;
         if (contrasena != confirmarContrasena){
             ViewBag.mensajeError = "LAS CONTRASEÑAS NO COINCIDEN";}
@@ -59,9 +63,33 @@ public class HomeController : Controller
         return RedirectToAction(devolver, "Home");
     }
 
+    public IActionResult RegistroGuardarOrg(string nombre, string latitud,string longitud, string email,string descripcion, string contrasena)
+    {
+        string devolver = "RegistroOrg";
+        string confirmarContrasena = contrasena;
+        if (contrasena != confirmarContrasena){
+            ViewBag.mensajeError = "LAS CONTRASEÑAS NO COINCIDEN";}
+        else if (nombre != null && latitud != null && longitud != null && contrasena != null && email != null && descripcion != null){
+        BD.Registro(nombre, latitud, longitud, contrasena, email, descripcion);
+        HttpContext.Session.SetString("Organizacion", Objetos.ObjectToString(BD.LoginOrg(username, contrasena))); 
+        devolver = "Index";
+        }
+        return RedirectToAction(devolver, "Home");
+    }
+
     public IActionResult Desloguearse(){
         HttpContext.Session.Remove("Usuario");
         return View("Index");
     }
 
+/* METODO QUE TRAIGA DE LA BD LA LISTA DE CIERTA CATEGORIA
+RECIBE X PARAMETRO LA CATEGORIA
+MANDA A LA VIEW DONAR UNA LISTA Y EN LA VIEW SE RECORRE CON UN FOREACH
+
+*/
+/*HACER:
+FOOTER
+HEADER
+AGREGAR REGIST
+*/
 }

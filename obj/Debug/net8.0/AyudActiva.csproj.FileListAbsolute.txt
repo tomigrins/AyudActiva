@@ -161,3 +161,4 @@ C:\Users\49627257\AyudActiva\obj\Debug\net8.0\scopedcss\bundle\AyudActiva.styles
 C:\Users\49627257\AyudActiva\obj\Debug\net8.0\AyudActiva.csproj.Up2Date
 C:\Users\49627257\AyudActiva\obj\Debug\net8.0\AyudActiva.genruntimeconfig.cache
 C:\Users\49627257\AyudActiva\obj\Debug\net8.0\ref\AyudActiva.dll
+C:\Users\49627257\AyudActiva\bin\Debug\net8.0\System.Text.Json.dll

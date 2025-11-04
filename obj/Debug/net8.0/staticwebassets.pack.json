@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\bd\\BD.sql"
     },
     {
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\bd\\BD_Final.sql",
+      "PackagePath": "staticwebassets\\bd\\BD_Final.sql"
+    },
+    {
       "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
