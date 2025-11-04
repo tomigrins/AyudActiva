@@ -18,13 +18,17 @@ public static class BD
         return aux;
     }
 
-    public static void Registro (string nombre, string apellido, string username, string contrasena, string email, DateTime fechaNacimiento){
+    public static void RegistroUser (string nombre, string apellido, string username, string contrasena, string email, DateTime fechaNacimiento){
     string query ="INSERT INTO Usuarios (nombre, apellido, username, contrasena, email, fechaNacimiento) VALUES (@nombre, @apellido, @username, @contrasena, @email, @fechaNacimiento)";
         using (SqlConnection connection = new SqlConnection(_connectionString)){
             connection.Execute(query, new{nombre, apellido, username, contrasena, email, fechaNacimiento});}
     }
 	
-
+  public static void RegistroOrg (string nombre, string latitud,string longitud, string email,string descripcion, string contrasena, string username){
+    string query ="INSERT INTO Usuarios (nombre, latitud, longitud, contrasena, email, descripcion, username) VALUES (@nombre, @latitud, @longitud, @contrasena, @email, @descripcion, @username)";
+        using (SqlConnection connection = new SqlConnection(_connectionString)){
+            connection.Execute(query, new{nombre, latitud, longitud, contrasena, email, descripcion, username});}
+    }
     /*
     public static void nuevaTarea (string titulo, string descripcion, DateTime fecha, bool finalizada, int IDUsuario) {
         string query ="INSERT INTO Tareas (titulo, descripcion, fecha, finalizada, IDUsuario) VALUES (@titulo, @descripcion, @fecha, @finalizada, @IDUsuario)";

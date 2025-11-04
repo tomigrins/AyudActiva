@@ -40,6 +40,10 @@ public class HomeController : Controller
         return RedirectToAction(devolver, devolverController);
     }
 
+    public IActionResult Registro()
+    {
+        return View("Registro");
+    }
     public IActionResult RegistroUser()
     {
         return View("RegistroUser");
@@ -56,22 +60,22 @@ public class HomeController : Controller
         if (contrasena != confirmarContrasena){
             ViewBag.mensajeError = "LAS CONTRASEÑAS NO COINCIDEN";}
         else if (nombre != null && apellido != null && username != null && contrasena != null && email != null && fechaNacimiento != null){
-        BD.Registro(nombre, apellido, username, contrasena, email, fechaNacimiento);
+        BD.RegistroUser(nombre, apellido, username, contrasena, email, fechaNacimiento);
         HttpContext.Session.SetString("Usuario", Objetos.ObjectToString(BD.Login(username, contrasena))); 
         devolver = "Index";
         }
         return RedirectToAction(devolver, "Home");
     }
 
-    public IActionResult RegistroGuardarOrg(string nombre, string latitud,string longitud, string email,string descripcion, string contrasena)
+    public IActionResult RegistroGuardarOrg(string nombre, string latitud,string longitud, string email,string descripcion,string username, string contrasena)
     {
         string devolver = "RegistroOrg";
         string confirmarContrasena = contrasena;
         if (contrasena != confirmarContrasena){
             ViewBag.mensajeError = "LAS CONTRASEÑAS NO COINCIDEN";}
-        else if (nombre != null && latitud != null && longitud != null && contrasena != null && email != null && descripcion != null){
-        BD.Registro(nombre, latitud, longitud, contrasena, email, descripcion);
-        HttpContext.Session.SetString("Organizacion", Objetos.ObjectToString(BD.LoginOrg(username, contrasena))); 
+        else if (nombre != null && latitud != null && longitud != null && contrasena != null && email != null && descripcion != null && username != null){
+        BD.RegistroOrg(nombre, latitud, longitud, contrasena, email, descripcion, username);
+        HttpContext.Session.SetString("Organizacion", Objetos.ObjectToString(BD.Login(username, contrasena))); 
         devolver = "Index";
         }
         return RedirectToAction(devolver, "Home");

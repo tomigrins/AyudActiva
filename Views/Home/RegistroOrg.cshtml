@@ -2,18 +2,23 @@
             <h2>Nombre:</h2> 
             <p><input type="text" name="nombre" required></p>
 
-            <h2>Apellido:</h2> 
-            <p><input type="text" name="apellido" required></p>
+            <h2>Latitud:</h2> 
+            <p><input type="text" name="latitud" required></p>
 
-            <h2>Username:</h2> 
-            <p><input type="text" name="username" required></p>
+            <h2>Longitud:</h2> 
+            <p><input type="text" name="longitud" required></p>
             
             <h2>Email:</h2> 
             <p><input type="email" name="email" required></p>
 
             
-            <h2>Fecha de nacimiento:</h2> 
-            <p><input type="date" name="fechaNacimiento" required></p>
+            <h2>Descripción:</h2> 
+            <p><input type="text" name="descripcion" required></p>
+
+            
+            <h2>Username:</h2> 
+            <p><input type="text" name="username" required></p>
+
 
             <h2>Contraseña:</h2> 
             <p><input type="password" name="contrasena" required></p>
@@ -26,8 +31,9 @@
             <h2 class="error">@ViewBag.mensajeError</h2>
 
 
-
             <p><input type="submit" value="Enviar"></p>
         </form>
 
         <a class="boton" href='@Url.Action("Login","Home")'>INICIAR SESIÓN</a>
+        
+        <a class="boton" href='@Url.Action("RegistroUser","Home")'>SOY DONANTE</a>
