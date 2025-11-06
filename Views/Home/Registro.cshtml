@@ -2,21 +2,24 @@
   <h2 class="registrar-titulo">Elegí tu tipo de cuenta</h2>
 
 
+
+
   <div class="elegir-container">
-    <p class="elegir-texto">Seleccioná el tipo de usuario con el que querés registrarte</p>
+    <p>Seleccioná el tipo de usuario con el que querés registrarte</p>
+
+
 
 
     <div class="elegir-botones">
-    
-<a class ="boton" href='@Url.Action("RegistroUser","Home")'class="btn">DONANTE</a>
+      <a asp-controller="Cuenta" asp-action="RegistrarDonante" class="elegir-boton">
         <img src="~/imagenes/icon-donante.png" alt="Donante" class="elegir-icono">
         <span>Donante</span>
       </a>
 
 
-      
 
-<a class ="boton" href='@Url.Action("RegistroOrg","Home")'class="btn">ORGANIZACIÓN</a>
+
+      <a asp-controller="Cuenta" asp-action="RegistrarOng" class="elegir-boton">
         <img src="~/imagenes/icon-ong.png" alt="ONG" class="elegir-icono">
         <span>ONG</span>
       </a>
