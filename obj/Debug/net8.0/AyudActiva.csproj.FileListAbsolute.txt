@@ -74,12 +74,6 @@ C:\Users\49190820\AyudActiva\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.
 C:\Users\49190820\AyudActiva\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
 C:\Users\49190820\AyudActiva\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\49190820\AyudActiva\obj\Debug\net8.0\AyudActiva.csproj.Up2Date
-C:\Users\49190820\AyudActiva\bin\Debug\net8.0\System.Text.Json.dll
-C:\Users\49190820\AyudActiva\obj\Debug\net8.0\staticwebassets\msbuild.AyudActiva.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\49190820\AyudActiva\obj\Debug\net8.0\staticwebassets\msbuild.build.AyudActiva.props
-C:\Users\49190820\AyudActiva\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.AyudActiva.props
-C:\Users\49190820\AyudActiva\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.AyudActiva.props
-C:\Users\49190820\AyudActiva\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\49627257\AyudActiva\obj\Debug\net8.0\AyudActiva.csproj.AssemblyReference.cache
 C:\Users\49627257\AyudActiva\obj\Debug\net8.0\AyudActiva.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\49627257\AyudActiva\obj\Debug\net8.0\AyudActiva.AssemblyInfoInputs.cache
@@ -162,3 +156,10 @@ C:\Users\49627257\AyudActiva\obj\Debug\net8.0\AyudActiva.csproj.Up2Date
 C:\Users\49627257\AyudActiva\obj\Debug\net8.0\AyudActiva.genruntimeconfig.cache
 C:\Users\49627257\AyudActiva\obj\Debug\net8.0\ref\AyudActiva.dll
 C:\Users\49627257\AyudActiva\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\49190820\AyudActiva\bin\Debug\net8.0\AyudActiva.staticwebassets.endpoints.json
+C:\Users\49190820\AyudActiva\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\49190820\AyudActiva\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\49190820\AyudActiva\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\49190820\AyudActiva\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\49190820\AyudActiva\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\49190820\AyudActiva\obj\Debug\net8.0\staticwebassets.build.endpoints.json

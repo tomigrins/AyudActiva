@@ -29,6 +29,14 @@ public static class BD
         using (SqlConnection connection = new SqlConnection(_connectionString)){
             connection.Execute(query, new{nombre, latitud, longitud, contrasena, email, descripcion, username});}
     }
+    public static List<Ubicaciones> RecibirApi(){
+        List<Ubicaciones> Lista  = new List<Ubicaciones>();
+        string query = "select nombre as titulo, latitud, longitud from Organizaciones";
+        using (SqlConnection connection = new SqlConnection(_connectionString)){
+            Lista = connection.Query<Ubicaciones>(query).ToList();
+        }
+        return Lista;
+    }
     /*
     public static void nuevaTarea (string titulo, string descripcion, DateTime fecha, bool finalizada, int IDUsuario) {
         string query ="INSERT INTO Tareas (titulo, descripcion, fecha, finalizada, IDUsuario) VALUES (@titulo, @descripcion, @fecha, @finalizada, @IDUsuario)";

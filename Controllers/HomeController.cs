@@ -16,7 +16,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View("Donar");
+        return RedirectToAction("Donar");
     }    
 
  public IActionResult Login()
@@ -88,14 +88,7 @@ public class HomeController : Controller
     }
     public IActionResult Donar()
     {
-    var ubicaciones = new[]
-    {
-        new { lat = -34.6089, lng = -58.4311, titulo = "ORT Almagro" },
-        new { lat = -34.6037, lng = -58.3816, titulo = "Obelisco" },
-        new { lat = -34.6158, lng = -58.4333, titulo = "Parque Centenario" }
-    };
-
-    ViewBag.Ubicaciones = JsonSerializer.Serialize(ubicaciones);
+    ViewBag.Ubicaciones = JsonSerializer.Serialize(BD.RecibirApi());
     return View();
     }
 

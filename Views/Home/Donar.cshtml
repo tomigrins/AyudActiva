@@ -20,13 +20,8 @@
 </section>
 <script>
   let map;
-
   // Ejemplo de coordenadas (luego podés traerlas desde tu backend)
-  const ubicaciones = [
-    { lat: -34.6089, lng: -58.4311, titulo: "ORT Almagro" },
-    { lat: -34.6037, lng: -58.3816, titulo: "Obelisco" },
-    { lat: -34.6158, lng: -58.4333, titulo: "Parque Centenario" }
-  ];
+  const ubicaciones = @Html.Raw(ViewBag.Ubicaciones);
 
   function initMap() {
     // Crea el mapa centrado en Buenos Aires
@@ -38,14 +33,14 @@
     // Crea los marcadores (con flecha personalizada)
     ubicaciones.forEach(ubi => {
       new google.maps.Marker({
-        position: { lat: ubi.lat, lng: ubi.lng },
+        position: { lat: ubi.latitud, lng: ubi.longitud },
         map,
         title: ubi.titulo,
         icon: {
           path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
           scale: 5,
-          strokeColor: "#ff0000",
-          rotation: 0 // Podés cambiar la orientación si querés
+          strokeColor: "#0112EB",
+          rotation: 180 // Podés cambiar la orientación si querés
         }
       });
     });
@@ -54,8 +49,5 @@
 
 <!-- Cargá el script oficial de Google Maps con tu API key -->
 <script async
-  src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY_AQUI&callback=initMap">
-</script>
-<script>
-  const ubicaciones = @Html.Raw(ViewBag.Ubicaciones);
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCw_5lgwvX4Vl-61pqe-C_-NosGEEJ03GM&callback=initMap">
 </script>
