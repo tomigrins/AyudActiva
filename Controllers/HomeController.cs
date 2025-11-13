@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using AyudActiva.Models;
+using System.Text.Json;
 
 namespace AyudActiva.Controllers;
 
@@ -15,7 +16,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View("Index");
+        return View("Donar");
     }    
 
  public IActionResult Login()
@@ -85,6 +86,19 @@ public class HomeController : Controller
         HttpContext.Session.Remove("Usuario");
         return View("Index");
     }
+    public IActionResult Donar()
+    {
+    var ubicaciones = new[]
+    {
+        new { lat = -34.6089, lng = -58.4311, titulo = "ORT Almagro" },
+        new { lat = -34.6037, lng = -58.3816, titulo = "Obelisco" },
+        new { lat = -34.6158, lng = -58.4333, titulo = "Parque Centenario" }
+    };
+
+    ViewBag.Ubicaciones = JsonSerializer.Serialize(ubicaciones);
+    return View();
+    }
+
 
 /* METODO QUE TRAIGA DE LA BD LA LISTA DE CIERTA CATEGORIA
 RECIBE X PARAMETRO LA CATEGORIA
