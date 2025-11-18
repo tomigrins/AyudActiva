@@ -1,53 +1,46 @@
 @{
     ViewData["Title"] = "Donar";
 }
+
+<!-- Contenedor principal -->
 <section class="Donar">
-  <div id="map" style="width:100%; height:500px; border-radius:10px;"></div>
 
-  <div class="donar-panel">
-      <h2>¿Qué quiero <strong>donar</strong>?</h2>
-      <ul>
-        <li><input type="radio" name="donar" id="alimentos"><label for="alimentos">Alimentos</label></li>
-        <li><input type="radio" name="donar" id="ropa"><label for="ropa">Ropa</label></li>
-        <li><input type="radio" name="donar" id="bebes"><label for="bebes">Artículos para bebés</label></li>
-        <li><input type="radio" name="donar" id="muebles"><label for="muebles">Muebles</label></li>
-        <li><input type="radio" name="donar" id="tecno"><label for="tecno">Tecnología</label></li>
-        <li><input type="radio" name="donar" id="utiles"><label for="utiles">Útiles escolares</label></li>
-        <li><input type="radio" name="donar" id="cocina"><label for="cocina">Cocina</label></li>
-        <li><input type="radio" name="donar" id="libros"><label for="libros">Libros</label></li>
-      </ul>
-  </div>
+    <!-- Mapa -->
+    <div id="map" style="width:100%; height:500px; border-radius:10px;"></div>
+
+    <!-- Panel para elegir qué donar (comentario original mantenido) -->
+    <div class="donar-panel">
+        <h2>¿Qué quiero <strong>donar</strong>?</h2>
+        <ul>
+            <li><input type="radio" name="donar" id="alimentos"><label for="alimentos">Alimentos</label></li>
+            <li><input type="radio" name="donar" id="ropa"><label for="ropa">Ropa</label></li>
+            <li><input type="radio" name="donar" id="bebes"><label for="bebes">Artículos para bebés</label></li>
+            <li><input type="radio" name="donar" id="muebles"><label for="muebles">Muebles</label></li>
+            <li><input type="radio" name="donar" id="tecno"><label for="tecno">Tecnología</label></li>
+            <li><input type="radio" name="donar" id="utiles"><label for="utiles">Útiles escolares</label></li>
+            <li><input type="radio" name="donar" id="cocina"><label for="cocina">Cocina</label></li>
+            <li><input type="radio" name="donar" id="libros"><label for="libros">Libros</label></li>
+        </ul>
+    </div>
+
+    <!-- Panel de información al hacer click en un marcador -->
+    <div id="info-panel" style="display:none; padding:15px; border-radius:10px; background:white; box-shadow:0 0 10px rgba(0,0,0,0.2); margin-top:10px; max-width:400px;">
+        <h3 id="info-titulo"></h3>
+        <p id="info-detalle"></p>
+        <button id="btn-vermas">Ver más</button>
+    </div>
+
 </section>
+
+<!-- 1) primero definimos ubicaciones -->
 <script>
-  let map;
-  // Ejemplo de coordenadas (luego podés traerlas desde tu backend)
-  const ubicaciones = @Html.Raw(ViewBag.Ubicaciones);
-
-  function initMap() {
-    // Crea el mapa centrado en Buenos Aires
-    map = new google.maps.Map(document.getElementById("map"), {
-      center: { lat: -34.6089, lng: -58.4311 },
-      zoom: 13,
-    });
-
-    // Crea los marcadores (con flecha personalizada)
-    ubicaciones.forEach(ubi => {
-      new google.maps.Marker({
-        position: { lat: ubi.latitud, lng: ubi.longitud },
-        map,
-        title: ubi.titulo,
-        icon: {
-          path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
-          scale: 5,
-          strokeColor: "#0112EB",
-          rotation: 180 // Podés cambiar la orientación si querés
-        }
-      });
-    });
-  }
+    const ubicaciones = @Html.Raw(ViewBag.Ubicaciones);
 </script>
 
-<!-- Cargá el script oficial de Google Maps con tu API key -->
-<script async
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCw_5lgwvX4Vl-61pqe-C_-NosGEEJ03GM&callback=initMap">
+<!-- 2) luego tu archivo con initMap() -->
+<script src="~/js/Donar.js"></script>
+
+<!-- 3) al final, Google Maps -->
+<script async 
+        src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap">
 </script>
