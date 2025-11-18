@@ -31,7 +31,7 @@ public static class BD
     }
     public static List<Ubicaciones> RecibirApi(){
         List<Ubicaciones> Lista  = new List<Ubicaciones>();
-        string query = "select nombre as titulo, latitud, longitud from Organizaciones";
+        string query = "select nombre as titulo, latitud, longitud, descripcion from Organizaciones";
         using (SqlConnection connection = new SqlConnection(_connectionString)){
             Lista = connection.Query<Ubicaciones>(query).ToList();
         }

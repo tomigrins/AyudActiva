@@ -188,19 +188,11 @@ hr{
   overflow: hidden;
 }
 
-
-/* Intercalado de tarjetas */
-.tarjeta:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-
 .tarjeta img {
   width: 40%;
   max-width: 25%;
   height: auto;
 }
-
 
 .tarjeta .texto {
   width: 60%;
@@ -208,13 +200,11 @@ hr{
   padding: 3%;
 }
 
-
 .tarjeta h3 {
   color: #1e1e8f;
   font-size: 110%;
   margin-bottom: 1%;
 }
-
 
 .tarjeta p {
   font-size: 90%;
@@ -982,9 +972,6 @@ hr{
   width: 100%;
 }
 
-
-
-
 .elegir-boton {
   display: flex;
   flex-direction: column;
@@ -1002,16 +989,10 @@ hr{
   transition: all 0.3s ease;
 }
 
-
-
-
 .elegir-boton:hover {
   background-color: #c4d6ff;
   transform: scale(1.05);
 }
-
-
-
 
 .elegir-icono {
   width: 3em;
