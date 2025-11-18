@@ -22,3 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
     tabOng.addEventListener("click", () => cambiarFormulario("ong"));
   });
   
+
+  const texto = document.getElementById('nombreUser')
+  nombreUser.inn

@@ -1,5 +1,5 @@
 using Newtonsoft.Json;
-
+namespace AyudActiva.Models;
 public static class Objetos{
     public static string ListToString<T>(List<T> lista){
         return JsonConvert.SerializeObject(lista);

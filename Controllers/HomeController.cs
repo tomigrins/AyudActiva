@@ -14,10 +14,15 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index()
+ /*   public IActionResult Index()
     {
         return RedirectToAction("Donar");
-    }    
+    }    */
+    public IActionResult Index()
+        {
+            return View();
+        }
+    
 
  public IActionResult Login()
     {
@@ -25,12 +30,12 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public IActionResult LoginGuardar(string username, string contraseña)
+    public IActionResult LoginGuardar(string username, string contrasena)
     {   
         ViewBag.mensajeError = "";
         string devolver = "Login";
         string devolverController = "UserAccount";
-        Usuario usuario = BD.Login(username, contraseña);
+        Usuario usuario = BD.Login(username, contrasena);
         if(usuario != null){
             devolver = "Index";
             devolverController = "Home";
