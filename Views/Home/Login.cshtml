@@ -1,11 +1,18 @@
-<h1>BIENVENIDOS AL HIMALAYA</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class = "registroUser">
     <form action='@Url.Action("LoginGuardar","Home")' method="post">
     <h2>Username:</h2> <p><input type="text" name = "username"></p>
     <h2>Contraseña:</h2> <p><input type="password" name= "contrasena"></p>
     <p><input type="submit" value = "Enviar"></p>
     </form>
-    <h3>@ViewBag.MensajeError</h3>
-
-
-<a class ="boton" href='@Url.Action("RegistroUser","Home")'class="btn">REGISTRARSE</a>
-<!-- Todo el css -->
+    </section>
+</body>
+</html>

@@ -97,6 +97,14 @@ public class HomeController : Controller
     return View();
     }
 
+    public IActionResult ViewDonar(){
+        return View("Donar");
+    }    public IActionResult ViewHistorial(){
+        return View("Historial");
+    }    public IActionResult ViewFinanciar(){
+        return View("Financiar");
+    }
+
 
 /* METODO QUE TRAIGA DE LA BD LA LISTA DE CIERTA CATEGORIA
 RECIBE X PARAMETRO LA CATEGORIA

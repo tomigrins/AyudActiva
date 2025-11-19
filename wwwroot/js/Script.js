@@ -23,5 +23,5 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   
 
-  const texto = document.getElementById('nombreUser')
-  nombreUser.inn
+
+

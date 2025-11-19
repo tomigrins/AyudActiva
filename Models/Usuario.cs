@@ -13,9 +13,4 @@ public class Usuario{
     public string contrasena{ get; private set; }
     [JsonProperty]
     public int edad{ get; private set; }
-
-    public Usuario()
-    {
-
-    }
 }

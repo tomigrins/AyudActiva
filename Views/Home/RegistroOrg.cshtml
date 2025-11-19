@@ -1,41 +1,32 @@
-<form class = "registroUser" action='@Url.Action("RegistroGuardarOrg","Home")' method="post">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class = "registroUser">
+        <form action='@Url.Action("RegistroGuardarOrg","Home")' method="post">
             <h2>Nombre:</h2> 
             <p><input type="text" name="nombre" required></p>
-
-            <h2>Latitud:</h2> 
+            <h2>Latitud:</h2>
             <p><input type="text" name="latitud" required></p>
-
             <h2>Longitud:</h2> 
             <p><input type="text" name="longitud" required></p>
-            
             <h2>Email:</h2> 
             <p><input type="email" name="email" required></p>
-
-            
             <h2>Descripción:</h2> 
             <p><input type="text" name="descripcion" required></p>
-
-            
             <h2>Username:</h2> 
             <p><input type="text" name="username" required></p>
-
-
             <h2>Contraseña:</h2> 
             <p><input type="password" name="contrasena" required></p>
-
             <h2>Repetir contraseña:</h2> 
             <p><input type="password" name="confirmarContrasena" required></p>
-
-
-
-            <h2 class="error">@ViewBag.mensajeError</h2>
-
-
             <p><input type="submit" value="Enviar"></p>
         </form>
-
-        <a class="boton" href='@Url.Action("Login","Home")'>INICIAR SESIÓN</a>
-        
-        <a class="boton" href='@Url.Action("RegistroUser","Home")'>SOY DONANTE</a>
-
-<!-- Todo css -->
+    </section>
+</body>
+</html>

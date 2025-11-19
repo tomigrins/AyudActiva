@@ -1,36 +1,26 @@
-<section class="registrar-section">
-  <h2 class="registrar-titulo">Elegí tu tipo de cuenta</h2>
-
-
-
-
-  <div class="elegir-container">
-    <p>Seleccioná el tipo de usuario con el que querés registrarte</p>
-
-
-
-
-    <div class="elegir-botones">
-<<<<<<< HEAD
-      <a asp-controller="Home" asp-action="RegistroUser" class="elegir-boton">
-        <img src="~/imagenes/icon-donante.png" alt="Donante" class="elegir-icono">
-        <span>Donante</span>
-      </a>
-
-
-
-
-      <a asp-controller="Home" asp-action="RegistroOrg" class="elegir-boton">
-        <img src="~/imagenes/icon-ong.png" alt="ONG" class="elegir-icono">
-        <span>ONG</span>
-=======
-      <a asp-controller="Cuenta" asp-action="RegistrarDonante" class="elegir-boton">
-        <h1>Donante</h1>
-      </a>
-      <a asp-controller="Cuenta" asp-action="RegistrarOng" class="elegir-boton">
-        <h1>ONG</h1>
->>>>>>> 8ea01d809bac3a2a7a6276ebba81c04b4407ecaf
-      </a>
-    </div>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="registrar-section">
+        <h2 class="registrar-titulo">Elegí tu tipo de cuenta</h2>
+        <div class="elegir-container">
+          <p>Seleccioná el tipo de usuario con el que querés registrarte</p>
+          <div class="elegir-botones">
+            <a asp-controller="Home" asp-action="RegistroUser" class="elegir-boton">
+              <h1>Donante</h1>
+            </a>
+            <a asp-controller="Home" asp-action="RegistroOrg" class="elegir-boton">
+              <h1>ONG</h1>
+      
+            </a>
+          </div>
+        </div>
+      </section>
+</body>
+</html>

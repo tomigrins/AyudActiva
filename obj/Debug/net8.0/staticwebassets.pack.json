@@ -21,8 +21,24 @@
       "PackagePath": "staticwebassets\\Imagenes\\Iconografia4-AyudActiva.jpg"
     },
     {
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\Imagenes\\LOGO_SIMPLIFICADO.png",
+      "PackagePath": "staticwebassets\\Imagenes\\LOGO_SIMPLIFICADO.png"
+    },
+    {
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\Imagenes\\facebook.png",
+      "PackagePath": "staticwebassets\\Imagenes\\facebook.png"
+    },
+    {
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\Imagenes\\insta.png",
+      "PackagePath": "staticwebassets\\Imagenes\\insta.png"
+    },
+    {
       "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\Imagenes\\mbappe.webp",
       "PackagePath": "staticwebassets\\Imagenes\\mbappe.webp"
+    },
+    {
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\Imagenes\\tiktok.jpg",
+      "PackagePath": "staticwebassets\\Imagenes\\tiktok.jpg"
     },
     {
       "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\bd\\BD.sql",
@@ -39,6 +55,10 @@
     {
       "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\js\\Donar.js",
+      "PackagePath": "staticwebassets\\js\\Donar.js"
     },
     {
       "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\js\\Script.js",
