@@ -1,11 +1,19 @@
-<h1>BIENVENIDOS AL HIMALAYA</h1>
-    <form action='@Url.Action("LoginGuardar","Home")' method="post">
-    <h2>Username:</h2> <p><input type="text" name = "username"></p>
-    <h2>Contraseña:</h2> <p><input type="password" name= "contrasena"></p>
-    <p><input type="submit" value = "Enviar"></p>
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="login">
+<h1>Inicia Sesion</h1>
+<div class = "login-box">
+<form action='@Url.Action("LoginGuardar","Home")' method="post">
+      <input type="text" name="username" placeholder="Username">
+      <input class="input" type="password" name="password" id="password" placeholder="Contraseña">
+      <input class="login-button" type="submit" value="Enviar">
+      <a class="boton"href='@Url.Action("RegistroUser","Home")'class="btn">Registrate</a>
     </form>
-    <h3>@ViewBag.MensajeError</h3>
 
 
-<a class ="boton" href='@Url.Action("RegistroUser","Home")'class="btn">REGISTRARSE</a>
-<!-- Todo el css -->
+</div></div>
+
+
+</div>
