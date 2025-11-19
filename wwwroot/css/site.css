@@ -268,13 +268,8 @@ hr{
   font-size: 85%;
 }
 
-
-
-
-
-
-/* Financiar */
-.Financiar {
+ /* Financiar */
+ .Financiar {
   font-family: "Poppins", sans-serif;
   color: #1e1e8f;
   background-color: #fff;
@@ -307,8 +302,8 @@ hr{
   background: #ffffff;
   border-radius: 2%;
   padding: 3% 5%;
-  margin-bottom: 3%;
-  box-shadow: 0 0.5% 2% rgba(0, 0, 0, 0.05);
+  margin-bottom: 3%;box-shadow: 0 0.3vw 0.8vw rgba(0, 0, 0, 0.08);
+
 }
 
 
@@ -328,7 +323,7 @@ hr{
   display: block;
   font-weight: 600;
   font-size: 1vw;
-  margin-bottom: 1%;
+  margin-bottom: 3%;
   color: #1e1e8f;
 }
 
@@ -340,7 +335,7 @@ hr{
   border: 0.1vw solid #ccc;
   border-radius: 1vw;
   font-size: 1vw;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
   outline: none;
 }
 
@@ -369,29 +364,37 @@ hr{
 }
 
 
-.Financiar .metodos {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 3%;
-  flex-wrap: wrap;
+.Financiar .metodos label {
+  display: block;
+  width: 18%;
+  text-align: center;
+  cursor: pointer;
 }
 
+.Financiar .metodos input[type="radio"] {
+  display: none;  /* Ocultamos los radios */
+}
 
 .Financiar .metodos img {
-  width: 18%;
+  width: 100%;  /* Imágenes ocupan el 100% del contenedor */
   height: auto;
-  border-radius: 50%;
+  border-radius: 8px;
   background-color: #fff;
-  padding: 1%;
+  padding: 0.5em;
   box-shadow: 0 0.3vw 0.8vw rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.Financiar .metodos input[type="radio"]:checked + img {
+  transform: scale(1.05);  /* Ampliamos la imagen cuando está seleccionada */
+  box-shadow: 0 0.5vw 1.2vw #1e007033;  /* Añadimos más sombra */
+}
 
 .Financiar .metodos img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);  /* Ampliamos la imagen cuando se pasa el ratón */
+  box-shadow: 0 0.5vw 1.2vw rgba(0, 0, 0, 0.15);
 }
+
 
 
 .Financiar .btn-confirmar {
@@ -410,7 +413,6 @@ hr{
 .Financiar .btn-confirmar:hover {
   background-color: #b8c9ff;
 }
-
 
 /* Campana */
 .Campana {
