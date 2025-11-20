@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\Imagenes\\tiktok.jpg"
     },
     {
+      "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\Imagenes\\twitter.jpeg",
+      "PackagePath": "staticwebassets\\Imagenes\\twitter.jpeg"
+    },
+    {
       "Id": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\bd\\BD.sql",
       "PackagePath": "staticwebassets\\bd\\BD.sql"
     },

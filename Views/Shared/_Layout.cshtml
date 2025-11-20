@@ -18,7 +18,7 @@
     <!-- Logo -->
     <div class="header-logo">
         <a href='@Url.Action("Index","Home")'>
-            <img src="Imagenes/LOGO_SIMPLIFICADO.png" alt="LOGO">
+            <img src="~/Imagenes/LOGO_SIMPLIFICADO.png" alt="LOGO">
         </a>
     </div>
 
@@ -43,22 +43,14 @@
         {
             Usuario usuario = Objetos.StringToObject<Usuario>(user); 
                 {<h2>¡Bienvenido, @usuario.nombre!</h2>}
-        }
-        else
-        {
-            <div class="header-login">
-                <a class="boton" href='@Url.Action("Login","Home")'>Iniciar sesión</a>
-                <a class="boton" href='@Url.Action("Registro","Home")'>Registrarme</a>
-            </div>
-        }
-
+        
         <!-- Botón hamburguesa -->
         <div class="btn-hamburguesa" onclick="toggleMenu()">
             <span class="line"></span>
             <span class="line"></span>
             <span class="line"></span>
         </div>
-    </div>
+
 <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
     <!-- Sidebar -->
     <nav class="sidebar" id="sidebar">
@@ -81,6 +73,16 @@
             </form>
         </ul>
     </nav>
+    }
+        else
+        {
+            <div class="header-login">
+                <a class="boton" href='@Url.Action("Login","Home")'>Iniciar sesión</a>
+                <a class="boton" href='@Url.Action("Registro","Home")'>Registrarme</a>
+            </div>
+        }
+
+    </div>
 
 </header>
 

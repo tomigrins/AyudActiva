@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0hy/Gyow9GdrjrlNEZkwRxxswp21AI7OCW6wzGrnG5Q=",
+  "Hash": "sz4iYvQOyJi2MmL/XBcL0ftUD68FQNCu31+GVoxFP1Y=",
   "Source": "AyudActiva",
   "BasePath": "_content/AyudActiva",
   "Mode": "Default",
@@ -281,6 +281,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Imagenes\\tiktok.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\Imagenes\\twitter.jpeg",
+      "SourceId": "AyudActiva",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
+      "BasePath": "_content/AyudActiva",
+      "RelativePath": "Imagenes/twitter.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagenes\\twitter.jpeg"
     },
     {
       "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\js\\Donar.js",

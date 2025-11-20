@@ -32,18 +32,14 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult LoginGuardar(string username, string contrasena)
     {   
-        ViewBag.mensajeError = "";
+        ViewBag.mensajeError = "Usuario o clave incorrecto";;
         string devolver = "Login";
-        string devolverController = "UserAccount";
         Usuario usuario = BD.Login(username, contrasena);
         if(usuario != null){
             devolver = "Index";
-            devolverController = "Home";
-        HttpContext.Session.SetString("Usuario", Objetos.ObjectToString(usuario)); 
-        }else{
-            ViewBag.mensajeError = "Usuario o clave incorrecto";
+            HttpContext.Session.SetString("Usuario", Objetos.ObjectToString(usuario)); 
         }
-        return RedirectToAction(devolver, devolverController);
+        return View(devolver);
     }
 
     public IActionResult Registro()
