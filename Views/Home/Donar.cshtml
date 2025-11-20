@@ -1,46 +1,109 @@
-@{
-    ViewData["Title"] = "Donar";
-}
+<div id="map" style="width:100%; height:500px; background:#eee;"></div>
 
-<!-- Contenedor principal -->
-<section class="Donar">
+<div class="donar-panel">
+    <h2>¿Qué quiero <strong>donar</strong>?</h2>
+    <ul>
+        <li><input type="radio" name="donar" id="alimentos"><label for="alimentos">Alimentos</label></li>
+        <li><input type="radio" name="donar" id="ropa"><label for="ropa">Ropa</label></li>
+        <li><input type="radio" name="donar" id="bebes"><label for="bebes">Artículos para bebés</label></li>
+        <li><input type="radio" name="donar" id="muebles"><label for="muebles">Muebles</label></li>
+        <li><input type="radio" name="donar" id="tecno"><label for="tecno">Tecnología</label></li>
+        <li><input type="radio" name="donar" id="utiles"><label for="utiles">Útiles escolares</label></li>
+        <li><input type="radio" name="donar" id="cocina"><label for="cocina">Cocina</label></li>
+        <li><input type="radio" name="donar" id="libros"><label for="libros">Libros</label></li>
+    </ul>
+</div>
 
-    <!-- Mapa -->
-    <div id="map" style="width:100%; height:500px; border-radius:10px;"></div>
+<div class="donar-panel-campana">
+    <h2>Camapañas</h2>
+    @foreach (Ubicaciones item in ViewBag.UbicacionesDiv)
+    {
+        <div class="campana-item">
+            <p>@item.titulo</p>
+            <a class="btn-vermas btn-vermas-campana" href='@Url.Action("ViewCampana","Home")'>Ver Mas</a>
+        </div>
+    }
+</div>
 
-    <!-- Panel para elegir qué donar (comentario original mantenido) -->
-    <div class="donar-panel">
-        <h2>¿Qué quiero <strong>donar</strong>?</h2>
-        <ul>
-            <li><input type="radio" name="donar" id="alimentos"><label for="alimentos">Alimentos</label></li>
-            <li><input type="radio" name="donar" id="ropa"><label for="ropa">Ropa</label></li>
-            <li><input type="radio" name="donar" id="bebes"><label for="bebes">Artículos para bebés</label></li>
-            <li><input type="radio" name="donar" id="muebles"><label for="muebles">Muebles</label></li>
-            <li><input type="radio" name="donar" id="tecno"><label for="tecno">Tecnología</label></li>
-            <li><input type="radio" name="donar" id="utiles"><label for="utiles">Útiles escolares</label></li>
-            <li><input type="radio" name="donar" id="cocina"><label for="cocina">Cocina</label></li>
-            <li><input type="radio" name="donar" id="libros"><label for="libros">Libros</label></li>
-        </ul>
-    </div>
-
-    <!-- Panel de información al hacer click en un marcador -->
-    <div id="info-panel" style="display:none; padding:15px; border-radius:10px; background:white; box-shadow:0 0 10px rgba(0,0,0,0.2); margin-top:10px; max-width:400px;">
-        <h3 id="info-titulo"></h3>
-        <p id="info-detalle"></p>
-        <button id="btn-vermas">Ver más</button>
-    </div>
-
-</section>
-
-<!-- 1) primero definimos ubicaciones -->
 <script>
-    const ubicaciones = @Html.Raw(ViewBag.Ubicaciones);
+  let map;
+  let markers = [];
+
+  const ubicaciones = @Html.Raw(ViewBag.Ubicaciones);
+
+  window.initMap = function () {
+    map = new google.maps.Map(document.getElementById("map"), {
+      center: { lat: -34.6089, lng: -58.4311 },
+      zoom: 13,
+    });
+
+    cargarMarcadores(ubicaciones);
+
+    // 🔥 AGREGADO — escuchar cambios en los radios
+    document.querySelectorAll('.donar-panel input[type="radio"]').forEach(r => {
+        r.addEventListener("change", () => {
+            filtrarUbicaciones(r.id);
+        });
+    });
+  };
+
+  function cargarMarcadores(lista) {
+    markers.forEach(m => m.setMap(null));
+    markers = [];
+
+    lista.forEach(u => {
+      const marker = new google.maps.Marker({
+        position: { lat: u.latitud, lng: u.longitud },
+        map,
+        title: u.titulo,
+        icon: {
+          path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
+          scale: 5,
+          strokeColor: "#0112EB",
+          rotation: 180 
+        }
+      });
+
+      markers.push(marker);
+    });
+  }
+
+function filtrarUbicaciones(categoria) {
+
+    fetch(`/Home/FiltrarUbicaciones?categoria=${categoria}`)
+      .then(r => r.json())
+      .then(data => {
+          cargarMarcadores(data);
+
+          // 🔥 NUEVO: también actualizamos el panel
+          fetch(`/Home/FiltrarCampanas?categoria=${categoria}`)
+            .then(r => r.json())
+            .then(listaCampanas => {
+                actualizarPanelCampanas(listaCampanas);
+            });
+      });
+}
+  function actualizarPanelCampanas(lista) {
+    const contenedor = document.querySelector(".donar-panel-campana");
+
+    contenedor.innerHTML = `
+        <h2>Campañas</h2>
+    `;
+
+    if (lista.length === 0) {
+        contenedor.innerHTML += `<p>No hay campañas para esta categoría.</p>`;
+        return;
+    }
+
+    lista.forEach(item => {
+        contenedor.innerHTML += `
+            <div class="campana-item">
+                <p>${item.titulo}</p>
+                <a class="btn-vermas btn-vermas-campana" href="/Home/ViewCampana">Ver Mas</a>
+            </div>
+        `;
+    });
+}
 </script>
 
-<!-- 2) luego tu archivo con initMap() -->
-<script src="~/js/Donar.js"></script>
-
-<!-- 3) al final, Google Maps -->
-<script async 
-        src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap">
-</script>
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHo2Nt4gu8COeh6PahmHc-QGsDPkzWWjs&callback=initMap"></script>

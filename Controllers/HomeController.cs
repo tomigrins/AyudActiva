@@ -13,17 +13,11 @@ public class HomeController : Controller
     {
         _logger = logger;
     }
-
- /*   public IActionResult Index()
-    {
-        return RedirectToAction("Donar");
-    }    */
     public IActionResult Index()
         {
-            return View();
+            return RedirectToAction("Donar");
         }
     
-
  public IActionResult Login()
     {
         return View("Login");
@@ -94,8 +88,21 @@ public class HomeController : Controller
     public IActionResult Donar()
     {
     ViewBag.Ubicaciones = JsonSerializer.Serialize(BD.RecibirApi());
+    ViewBag.UbicacionesDiv = BD.RecibirApi();
     return View();
     }
+    public JsonResult FiltrarUbicaciones(string categoria)
+    {
+    var lista = BD.FiltrarApi(categoria);
+    return Json(lista);
+    }
+    [HttpGet]
+    public JsonResult FiltrarCampanas(string categoria)
+    {
+    var lista = BD.FiltrarApi(categoria); // mismo filtro que ubicaciones
+    return Json(lista);
+    }
+
 
     public IActionResult ViewDonar(){
         return View("Donar");
@@ -104,16 +111,7 @@ public class HomeController : Controller
     }    public IActionResult ViewFinanciar(){
         return View("Financiar");
     }
-
-
-/* METODO QUE TRAIGA DE LA BD LA LISTA DE CIERTA CATEGORIA
-RECIBE X PARAMETRO LA CATEGORIA
-MANDA A LA VIEW DONAR UNA LISTA Y EN LA VIEW SE RECORRE CON UN FOREACH
-
-*/
-/*HACER:
-FOOTER
-HEADER
-AGREGAR REGIST
-*/
+    public IActionResult ViewCampana(){
+        return View("Campana");
+    }
 }

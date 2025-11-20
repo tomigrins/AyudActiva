@@ -31,12 +31,26 @@ public static class BD
     }
     public static List<Ubicaciones> RecibirApi(){
         List<Ubicaciones> Lista  = new List<Ubicaciones>();
-        string query = "select nombre as titulo, latitud, longitud, descripcion from Organizaciones";
+        string query = "select nombre as titulo, latitud, longitud from Organizaciones";
         using (SqlConnection connection = new SqlConnection(_connectionString)){
             Lista = connection.Query<Ubicaciones>(query).ToList();
         }
         return Lista;
     }
+    public static List<Ubicaciones> FiltrarApi(string categoria){
+    List<Ubicaciones> Lista  = new List<Ubicaciones>();
+    string query = @"select Organizaciones.nombre as titulo, latitud, longitud 
+                     from Organizaciones 
+                     inner join OrgCat on Organizaciones.IDOrganizacion = OrgCat.IDOrganizacion 
+                     inner join CategoriasDonaciones on OrgCat.IDCategoriaDonacion = CategoriasDonaciones.IDCategoriaDonacion 
+                     where CategoriasDonaciones.nombre = @categoria";
+
+    using (SqlConnection connection = new SqlConnection(_connectionString)){
+        Lista = connection.Query<Ubicaciones>(query, new { categoria }).ToList(); // ✅ PASAMOS EL PARÁMETRO
+    }
+    return Lista;
+}
+
     /*
     public static void nuevaTarea (string titulo, string descripcion, DateTime fecha, bool finalizada, int IDUsuario) {
         string query ="INSERT INTO Tareas (titulo, descripcion, fecha, finalizada, IDUsuario) VALUES (@titulo, @descripcion, @fecha, @finalizada, @IDUsuario)";
