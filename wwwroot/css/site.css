@@ -227,6 +227,7 @@ section{
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  margin-top: 3%;
   }
   
   
@@ -268,6 +269,7 @@ body {
   .footer .social-icons img {
   width: 45px;
   height: 45px;
+  border-radius: 50%;
   }
   
   
@@ -2368,4 +2370,9 @@ hr{
   text-align: center;
   font-size: 1em;
   margin-top: 2%;
+}
+
+.comunidad hr{
+  margin:auto;
+  margin-top: 2%; 
 }
