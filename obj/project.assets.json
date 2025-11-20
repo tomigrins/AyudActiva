@@ -2455,23 +2455,39 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\49627257\\.nuget\\packages\\": {},
+<<<<<<< HEAD
+    "C:\\Users\\49190820\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\49193970\\.nuget\\packages\\": {},
+>>>>>>> e92502c83fe84abe8a7f46cf6a40caeb4f40ad5d
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\49627257\\AyudActiva\\AyudActiva.csproj",
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\49190820\\AyudActiva\\AyudActiva.csproj",
       "projectName": "AyudActiva",
-      "projectPath": "C:\\Users\\49627257\\AyudActiva\\AyudActiva.csproj",
-      "packagesPath": "C:\\Users\\49627257\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\49627257\\AyudActiva\\obj\\",
+      "projectPath": "C:\\Users\\49190820\\AyudActiva\\AyudActiva.csproj",
+      "packagesPath": "C:\\Users\\49190820\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\49190820\\AyudActiva\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\49193970\\AyudActiva\\AyudActiva.csproj",
+      "projectName": "AyudActiva",
+      "projectPath": "C:\\Users\\49193970\\AyudActiva\\AyudActiva.csproj",
+      "packagesPath": "C:\\Users\\49193970\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\49193970\\AyudActiva\\obj\\",
+>>>>>>> e92502c83fe84abe8a7f46cf6a40caeb4f40ad5d
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\49627257\\AppData\\Roaming\\NuGet\\NuGet.Config",
+<<<<<<< HEAD
+        "C:\\Users\\49190820\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\49193970\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> e92502c83fe84abe8a7f46cf6a40caeb4f40ad5d
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2497,7 +2513,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -2539,7 +2556,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
