@@ -7,6 +7,9 @@ namespace AyudActiva.Controllers;
 
 public class HomeController : Controller
 {
+
+
+    /*QUE NO SE PUEDAN REPERTIR USERNAMES*/
     private readonly ILogger<HomeController> _logger;
 
     public HomeController(ILogger<HomeController> logger)
@@ -15,7 +18,7 @@ public class HomeController : Controller
     }
     public IActionResult Index()
         {
-            return RedirectToAction("Donar");
+            return View();
         }
     
  public IActionResult Login()
@@ -49,10 +52,9 @@ public class HomeController : Controller
         return View("RegistroOrg");
     }
     [HttpPost]
-    public IActionResult RegistroGuardarUser(string nombre, string apellido,string username, string email, string contrasena, DateTime fechaNacimiento)
+    public IActionResult RegistroGuardarUser(string nombre, string apellido,string username, string email, DateTime fechaNacimiento, string contrasena, string confirmarContrasena)
     {
         string devolver = "RegistroUser";
-        string confirmarContrasena = contrasena;
         if (contrasena != confirmarContrasena){
             ViewBag.mensajeError = "LAS CONTRASEÑAS NO COINCIDEN";}
         else if (nombre != null && apellido != null && username != null && contrasena != null && email != null && fechaNacimiento != null){
@@ -60,13 +62,12 @@ public class HomeController : Controller
         HttpContext.Session.SetString("Usuario", Objetos.ObjectToString(BD.Login(username, contrasena))); 
         devolver = "Index";
         }
-        return RedirectToAction(devolver, "Home");
+        return View(devolver);
     }
 
-    public IActionResult RegistroGuardarOrg(string nombre, string latitud,string longitud, string email,string descripcion,string username, string contrasena)
+    public IActionResult RegistroGuardarOrg(string nombre, string latitud,string longitud, string email,string descripcion,string username, string contrasena, string confirmarContrasena)
     {
         string devolver = "RegistroOrg";
-        string confirmarContrasena = contrasena;
         if (contrasena != confirmarContrasena){
             ViewBag.mensajeError = "LAS CONTRASEÑAS NO COINCIDEN";}
         else if (nombre != null && latitud != null && longitud != null && contrasena != null && email != null && descripcion != null && username != null){
@@ -74,7 +75,7 @@ public class HomeController : Controller
         HttpContext.Session.SetString("Organizacion", Objetos.ObjectToString(BD.Login(username, contrasena))); 
         devolver = "Index";
         }
-        return RedirectToAction(devolver, "Home");
+        return View(devolver);
     }
 
     public IActionResult Desloguearse(){
@@ -107,7 +108,7 @@ public class HomeController : Controller
     }    public IActionResult ViewFinanciar(){
         return View("Financiar");
     }
-    public IActionResult ViewCampana(){
-        return View("Campana");
+    public IActionResult ViewONGInfo(){
+        return View("ONGInfo");
     }
 }

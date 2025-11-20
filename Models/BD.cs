@@ -7,11 +7,22 @@ public static class BD
     private static string _connectionString = @"Server=localhost; DataBase=AyudActiva1; Integrated Security=True; TrustServerCertificate=True;";
 
 
-       public static Usuario Login(string username, string contrasena){
+       public static Usuario LoginUser(string username, string contrasena){
         Usuario aux = new Usuario();
         if (username != null && contrasena != null){
         using (SqlConnection connection = new SqlConnection(_connectionString)){
         string query = "SELECT * FROM Usuarios WHERE username = @username AND contrasena = @contrasena";
+        aux = connection.QueryFirstOrDefault<Usuario>(query, new {username, contrasena});
+        }         
+        }
+        return aux;
+    }       
+    
+    public static Organizacion LoginOrg(string username, string contrasena){
+        Organizacion aux = new Usuario();
+        if (username != null && contrasena != null){
+        using (SqlConnection connection = new SqlConnection(_connectionString)){
+        string query = "SELECT * FROM Organizaciones WHERE username = @username AND contrasena = @contrasena";
         aux = connection.QueryFirstOrDefault<Usuario>(query, new {username, contrasena});
         }         
         }
@@ -25,7 +36,7 @@ public static class BD
     }
 	
   public static void RegistroOrg (string nombre, string latitud,string longitud, string email,string descripcion, string contrasena, string username){
-    string query ="INSERT INTO Usuarios (nombre, latitud, longitud, contrasena, email, descripcion, username) VALUES (@nombre, @latitud, @longitud, @contrasena, @email, @descripcion, @username)";
+    string query ="INSERT INTO Organizaciones (nombre, latitud, longitud, contrasena, email, descripcion, username) VALUES (@nombre, @latitud, @longitud, @contrasena, @email, @descripcion, @username)";
         using (SqlConnection connection = new SqlConnection(_connectionString)){
             connection.Execute(query, new{nombre, latitud, longitud, contrasena, email, descripcion, username});}
     }
