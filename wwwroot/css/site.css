@@ -325,45 +325,6 @@ body {
 }
 
 
-/* ===== Comunidad ===== */
-.comunidad {
-  width: 100%;
-  text-align: center;
-}
-hr{
-  margin-top: 3%;
-  border-top: 1px solid #000000;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-.comunidad h2 {
-  color: #1e1e8f;
-  font-size: 150%;
-  margin-bottom: 1.5%;
-}
-
-
-.comunidad p {
-  width: 60%;
-  margin: 0 auto 3%;
-  font-size: 90%;
-  color: #555;
-}
-
-
-.comunidad button {
-  background-color: #cfe3ff;
-  border: none;
-  padding: 1.2% 3%;
-  border-radius: 10px;
-  font-weight: bold;
-  color: #1e1e8f;
-  cursor: pointer;
-}
-
 
 /* ===== Acciones ===== */
 .acciones {
@@ -422,6 +383,7 @@ hr{
   padding: 1.2% 4%;
   border-radius: 10px;
   text-decoration: none;
+  margin-bottom: 3%;
   margin-top: 3%;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
@@ -443,26 +405,34 @@ hr{
 
 .proyectos h2 {
   color: #1e1e8f;
-  font-size: 140%;
+  font-size: 200%;
+  font-family: Poppins;
+  margin-top: 4%;
   margin-bottom: 3%;
 }
 
 
 .tarjeta {
-  width: 70%;
-  margin: 2% auto;
   display: flex;
   align-items: center;
-  background-color: white;
+  overflow: hidden;
+  width: 60%;
+  margin: 2% auto;
+  padding: 3%;
+  background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
 }
 
+
+
 .tarjeta img {
-  width: 40%;
+  width: 20%;
   max-width: 25%;
   height: auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.438);
+  border-radius: 20px;
+
 }
 
 .tarjeta .texto {
@@ -494,7 +464,6 @@ hr{
   cursor: pointer;
 }
 
-
 /* ===== Reseñas ===== */
 .resenas {
   width: 100%;
@@ -504,8 +473,10 @@ hr{
 
 .resenas h2 {
   color: #1e1e8f;
-  font-size: 130%;
+  font-size: 200%;
   margin-bottom: 3%;
+  font-family: Poppins;
+
 }
 
 
@@ -871,6 +842,14 @@ hr{
 
 .card-content {
   width: 75%;
+}
+
+.card-content img{
+  float: left;
+  border-radius: 5%;
+  width: 30%;
+  margin-top: 2%;
+  margin-right: 10%;
 }
 
 
@@ -1390,7 +1369,10 @@ hr{
 
 .comunidad h2 {
   color: #1e1e8f;
-  font-size: 150%;
+  font-size: 250%;
+  margin-top:4%;
+  font-family: Poppins;
+  font-weight:600 ;
   margin-bottom: 1.5%;
 }
 
@@ -1398,7 +1380,7 @@ hr{
 .comunidad p {
   width: 60%;
   margin: 0 auto 3%;
-  font-size: 90%;
+  font-size: 110%;
   color: #555;
 }
 
@@ -1409,6 +1391,7 @@ hr{
   padding: 1.2% 3%;
   border-radius: 10px;
   font-weight: bold;
+  margin-bottom: 2%;
   color: #1e1e8f;
   cursor: pointer;
 }
@@ -1483,18 +1466,7 @@ hr{
 }
 
 
-/* ===== Proyectos ===== */
-.proyectos {
-  width: 100%;
-  text-align: center;
-}
 
-
-.proyectos h2 {
-  color: #1e1e8f;
-  font-size: 140%;
-  margin-bottom: 3%;
-}
 
 .tarjetas {
   width: 90%;
@@ -1502,15 +1474,6 @@ hr{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-}
-
-.tarjeta {
-  width: 90%;
-  margin: 2% auto;
-  padding: 3%;
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .tarjeta .texto {
@@ -1543,53 +1506,6 @@ hr{
   cursor: pointer;
   margin-top: 1em;
 }
-
-
-
-/* ===== Reseñas ===== */
-.resenas {
-  width: 100%;
-  text-align: center;
-}
-
-
-.resenas h2 {
-  color: #1e1e8f;
-  font-size: 130%;
-  margin-bottom: 3%;
-}
-
-
-.personas {
-  display: flex;
-  justify-content: center;
-  gap: 8%;
-}
-
-
-.persona {
-  width: 20%;
-}
-
-
-.persona img {
-  width: 60%;
-  border-radius: 15px;
-  margin-bottom: 5%;
-}
-
-
-.persona h3 {
-  color: #1e1e8f;
-  font-size: 100%;
-}
-
-
-.persona p {
-  color: #666;
-  font-size: 85%;
-}
-
 
 
 
@@ -1867,199 +1783,6 @@ hr{
   color: #333;
 }
 
-/* Historial */
-.Historial {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #1a1a7c;
-  margin-top: 3%;
-  margin-bottom: 3%;
-}
-
-
-.Historial h1 {
-  text-align: center;
-  font-size: 2vw;
-  font-weight: 600;
-  width: 85%;
-  margin-bottom: 2%;
-  border-bottom: 0.1vw solid #d2d2f0;
-  padding-bottom: 1%;
-}
-
-
-.section-fecha {
-  width: 85%;
-  margin-top: 2%;
-  margin-bottom: 1%;
-  font-size: 1vw;
-  color: #a0a0a0;
-  font-weight: 400;
-}
-
-
-.card {
-  width: 85%;
-  background-color: #ffffff;
-  border-radius: 1vw;
-  border: 0.1vw solid #ddd;
-  box-shadow: 0 0.3vw 0.6vw rgba(0, 0, 0, 0.1);
-  padding: 1.5% 2%;
-  margin-bottom: 2%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: all 0.3s ease;
-}
-
-
-.card:hover {
-  transform: scale(1.01);
-  box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.15);
-}
-
-
-.card-content {
-  width: 75%;
-}
-
-
-.card h2 {
-  font-size: 1.1vw;
-  font-weight: 600;
-  margin: 0 0 0.5% 0;
-  color: #1a1a7c;
-}
-
-
-.card p {
-  font-size: 0.9vw;
-  margin: 0;
-  color: #8888aa;
-}
-
-
-.btn-vermas {
-  background-color: #dce8ff;
-  border: none;
-  border-radius: 0.5vw;
-  color: #1a1a7c;
-  font-weight: 500;
-  font-size: 0.9vw;
-  padding: 1.5% 5%;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-
-.btn-vermas:hover {
-  background-color: #c6d8ff;
-  transform: scale(1.03);
-}
-
-
-/* IniciarSesion */
-.IniciarSesion {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #1a1a7c;
-  font-family: 'Poppins', sans-serif;
-  margin-top: 4%;
-}
-
-
-.IniciarSesion h1 {
-  font-size: 2vw;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 2%;
-  width: 80%;
-  border-bottom: 0.1vw solid #d2d2f0;
-  padding-bottom: 1%;
-}
-
-
-.login-box {
-  width: 40%;
-  background-color: #ffffff;
-  border-radius: 1.5vw;
-  box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.15);
-  padding: 3% 4%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 2%;
-}
-
-
-.login-box form {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-.login-box input {
-  width: 100%;
-  padding: 3%;
-  margin-bottom: 4%;
-  border-radius: 0.5vw;
-  border: 0.1vw solid #ccc;
-  font-size: 1vw;
-  outline: none;
-}
-
-
-.login-box input:focus {
-  border-color: #aabaff;
-  box-shadow: 0 0 0.5vw rgba(170, 186, 255, 0.5);
-}
-
-
-.btn-continuar {
-  background-color: #dce8ff;
-  color: #1a1a7c;
-  border: none;
-  border-radius: 0.5vw;
-  font-weight: 500;
-  font-size: 1vw;
-  padding: 2% 8%;
-  cursor: pointer;
-  margin-top: 2%;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-
-.btn-continuar:hover {
-  background-color: #c6d8ff;
-  transform: scale(1.03);
-}
-
-
-.registro-texto {
-  margin-top: 3%;
-  font-size: 0.9vw;
-  color: #555;
-}
-
-
-.registro-texto a {
-  color: #1a1a7c;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-
-.registro-texto a:hover {
-  text-decoration: underline;
-}
 
 
 /* Registrate */
