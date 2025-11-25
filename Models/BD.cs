@@ -19,11 +19,11 @@ public static class BD
     }       
     
     public static Organizacion LoginOrg(string username, string contrasena){
-        Organizacion aux = new Usuario();
+        Organizacion aux = new Organizacion();
         if (username != null && contrasena != null){
         using (SqlConnection connection = new SqlConnection(_connectionString)){
         string query = "SELECT * FROM Organizaciones WHERE username = @username AND contrasena = @contrasena";
-        aux = connection.QueryFirstOrDefault<Usuario>(query, new {username, contrasena});
+        aux = connection.QueryFirstOrDefault<Organizacion>(query, new {username, contrasena});
         }         
         }
         return aux;
@@ -40,6 +40,25 @@ public static class BD
         using (SqlConnection connection = new SqlConnection(_connectionString)){
             connection.Execute(query, new{nombre, latitud, longitud, contrasena, email, descripcion, username});}
     }
+
+        public static bool repetirUsernameUser(string username)
+        {
+            string query = "SELECT CASE WHEN EXISTS(SELECT 1 FROM Usuarios WHERE username = @username) THEN 1 ELSE 0 END";
+
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                return connection.ExecuteScalar<int>(query, new { username }) == 1;
+            }
+        }
+        public static bool repetirUsernameOrg(string username)
+        {
+            string query = @"
+                SELECT CASE WHEN EXISTS(SELECT 1 FROM Organizaciones WHERE username = @username) THEN 1 ELSE 0 END";
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                return connection.ExecuteScalar<int>(query, new { username }) == 1;
+            }
+        }
     public static List<Ubicaciones> RecibirApi(){
         List<Ubicaciones> Lista  = new List<Ubicaciones>();
         string query = "select nombre as titulo, latitud, longitud from Organizaciones";

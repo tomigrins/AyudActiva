@@ -7,9 +7,6 @@ namespace AyudActiva.Controllers;
 
 public class HomeController : Controller
 {
-
-
-    /*QUE NO SE PUEDAN REPERTIR USERNAMES*/
     private readonly ILogger<HomeController> _logger;
 
     public HomeController(ILogger<HomeController> logger)
@@ -27,14 +24,25 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public IActionResult LoginGuardar(string username, string contrasena)
+    public IActionResult LoginGuardarUser(string username, string contrasena)
     {   
         ViewBag.mensajeError = "Usuario o clave incorrecto";;
         string devolver = "Login";
-        Usuario usuario = BD.Login(username, contrasena);
+        Usuario usuario = BD.LoginUser(username, contrasena);
         if(usuario != null){
             devolver = "Index";
             HttpContext.Session.SetString("Usuario", Objetos.ObjectToString(usuario)); 
+        }
+        return View(devolver);
+    }
+    public IActionResult LoginGuardarOrg(string username, string contrasena)
+    {   
+        ViewBag.mensajeError = "Usuario o clave incorrecto";;
+        string devolver = "Login";
+        Organizacion organizacion = BD.LoginOrg(username, contrasena);
+        if(organizacion != null){
+            devolver = "Index";
+            HttpContext.Session.SetString("Organizacion", Objetos.ObjectToString(organizacion)); 
         }
         return View(devolver);
     }
@@ -55,11 +63,14 @@ public class HomeController : Controller
     public IActionResult RegistroGuardarUser(string nombre, string apellido,string username, string email, DateTime fechaNacimiento, string contrasena, string confirmarContrasena)
     {
         string devolver = "RegistroUser";
-        if (contrasena != confirmarContrasena){
+        if(BD.repetirUsernameUser(username)){
+            ViewBag.mensajeError = "ESE USERNAME YA EXISTE";
+        }
+        else if (contrasena != confirmarContrasena){
             ViewBag.mensajeError = "LAS CONTRASEÑAS NO COINCIDEN";}
         else if (nombre != null && apellido != null && username != null && contrasena != null && email != null && fechaNacimiento != null){
         BD.RegistroUser(nombre, apellido, username, contrasena, email, fechaNacimiento);
-        HttpContext.Session.SetString("Usuario", Objetos.ObjectToString(BD.Login(username, contrasena))); 
+        HttpContext.Session.SetString("Usuario", Objetos.ObjectToString(BD.LoginUser(username, contrasena))); 
         devolver = "Index";
         }
         return View(devolver);
@@ -68,11 +79,14 @@ public class HomeController : Controller
     public IActionResult RegistroGuardarOrg(string nombre, string latitud,string longitud, string email,string descripcion,string username, string contrasena, string confirmarContrasena)
     {
         string devolver = "RegistroOrg";
-        if (contrasena != confirmarContrasena){
+        if(BD.repetirUsernameOrg(username)){
+            ViewBag.mensajeError = "ESE USERNAME YA EXISTE";
+        }
+        else if (contrasena != confirmarContrasena){
             ViewBag.mensajeError = "LAS CONTRASEÑAS NO COINCIDEN";}
         else if (nombre != null && latitud != null && longitud != null && contrasena != null && email != null && descripcion != null && username != null){
         BD.RegistroOrg(nombre, latitud, longitud, contrasena, email, descripcion, username);
-        HttpContext.Session.SetString("Organizacion", Objetos.ObjectToString(BD.Login(username, contrasena))); 
+        HttpContext.Session.SetString("Organizacion", Objetos.ObjectToString(BD.LoginOrg(username, contrasena))); 
         devolver = "Index";
         }
         return View(devolver);
