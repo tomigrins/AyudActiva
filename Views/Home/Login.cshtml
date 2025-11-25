@@ -7,15 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class = "registroUser">
-    <form action='@Url.Action("LoginGuardar","Home")' method="post">
-    <h2>Username:</h2> <p><input type="text" name = "username"></p>
-    <h2>Contraseña:</h2> <p><input type="password" name= "contrasena"></p>
-    <p><input type="submit" value = "Enviar"></p>
-            <h3>@ViewBag.mensajeError</h3>
-    </form>
-
-    </section>
-
+    <section class="registrar-section">
+        <h2 class="registrar-titulo">Elegí tu tipo de cuenta</h2>
+        <div class="elegir-container">
+          <p>Seleccioná el tipo de usuario con el que querés iniciar sesión</p>
+          <div class="elegir-botones">
+            <a asp-controller="Home" asp-action="LoginUser" class="elegir-boton">
+              <h1>Donante</h1>
+            </a>
+            <a asp-controller="Home" asp-action="LoginOrg" class="elegir-boton">
+              <h1>ONG</h1>
+      
+            </a>
+          </div>
+        </div>
+      </section>
 </body>
 </html>

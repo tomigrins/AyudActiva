@@ -36,14 +36,22 @@
 
         @{
             string user = Context.Session.GetString("Usuario");
-            bool isAuthenticated = !string.IsNullOrEmpty(user);
+            bool isUserAuthenticated = !string.IsNullOrEmpty(user);
+
+            string org = Context.Session.GetString("Organizacion");
+            bool isOrgAuthenticated = !string.IsNullOrEmpty(org);
         }
 
-        @if (isAuthenticated)
+        @if (isUserAuthenticated)
         {
             Usuario usuario = Objetos.StringToObject<Usuario>(user); 
                 {<h2>¡Bienvenido, @usuario.nombre!</h2>}
-        
+        }
+        else if (isOrgAuthenticated){
+                Organizacion organizacion = Objetos.StringToObject<Organizacion>(org); 
+                {<h2>¡Bienvenido, @organizacion.nombre!</h2>}
+
+        }
         <!-- Botón hamburguesa -->
         <div class="btn-hamburguesa" onclick="toggleMenu()">
             <span class="line"></span>
@@ -65,6 +73,7 @@
             <li><a href='@Url.Action("Index","Home")'>Certificados</a></li>
             <li><a href='@Url.Action("Index","Home")'>Mis logros</a></li>
             <li><a href='@Url.Action("Index","Home")'>Nuestra historia</a></li>
+            @if (isOrgAuthenticated){<li><a href='@Url.Action("ViewCatDonaciones","Home")'>Que donaciones busco</a></li>}
 
             <form action='@Url.Action("Desloguearse", "Home")' method="post">
                 <li class="cerrarSesion">
@@ -73,7 +82,7 @@
             </form>
         </ul>
     </nav>
-    }
+    
         else
         {
             <div class="header-login">

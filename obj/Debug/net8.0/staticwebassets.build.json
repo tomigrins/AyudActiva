@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sz4iYvQOyJi2MmL/XBcL0ftUD68FQNCu31+GVoxFP1Y=",
+  "Hash": "RWd0s8tJ8oiS2VhiwauWwBJmJEk7SegI3YFu8+9bOoU=",
   "Source": "AyudActiva",
   "BasePath": "_content/AyudActiva",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\bd\\BD.sql"
+    },
+    {
+      "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\bd\\prueba.sql",
+      "SourceId": "AyudActiva",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\",
+      "BasePath": "_content/AyudActiva",
+      "RelativePath": "bd/prueba.sql",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bd\\prueba.sql"
     },
     {
       "Identity": "C:\\Users\\49627257\\AyudActiva\\wwwroot\\css\\site.css",

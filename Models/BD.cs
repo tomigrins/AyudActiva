@@ -81,6 +81,16 @@ public static class BD
     return Lista;
 }
 
+public static void InsertarCategoriaOrg(int idOrganizacion, int idCategoriaDonacion)
+{
+    using (SqlConnection connection = new SqlConnection(_connectionString))
+    {
+        string query = @"INSERT INTO OrqCat (IDOrganizacion, IDCategoriaDonacion)
+                         VALUES (@idOrganizacion, @idCategoriaDonacion)";
+
+        connection.Execute(query, new { idOrganizacion, idCategoriaDonacion });
+    }
+}
     /*
     public static void nuevaTarea (string titulo, string descripcion, DateTime fecha, bool finalizada, int IDUsuario) {
         string query ="INSERT INTO Tareas (titulo, descripcion, fecha, finalizada, IDUsuario) VALUES (@titulo, @descripcion, @fecha, @finalizada, @IDUsuario)";

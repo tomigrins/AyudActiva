@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class = "registroUser">
+    <form action='@Url.Action("LoginGuardarUser","Home")' method="post">
+    <h2>Username:</h2> <p><input type="text" name = "username"></p>
+    <h2>Contraseña:</h2> <p><input type="password" name= "contrasena" value="@ViewBag.Contrasena"></p>
+    <p><input type="submit" value = "Enviar"></p>
+            <h3>@ViewBag.mensajeError</h3>
+    </form>
+
+    </section>
+
+</body>
+</html>

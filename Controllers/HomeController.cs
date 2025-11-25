@@ -7,6 +7,7 @@ namespace AyudActiva.Controllers;
 
 public class HomeController : Controller
 {
+/*    HAY UN PROBLEMA EN EL LAYOUT*/
     private readonly ILogger<HomeController> _logger;
 
     public HomeController(ILogger<HomeController> logger)
@@ -22,23 +23,33 @@ public class HomeController : Controller
     {
         return View("Login");
     }
-
+ public IActionResult LoginUser()
+    {
+        return View("LoginUser");
+    } public IActionResult LoginOrg()
+    {
+        return View("LoginOrg");
+    }
     [HttpPost]
     public IActionResult LoginGuardarUser(string username, string contrasena)
     {   
-        ViewBag.mensajeError = "Usuario o clave incorrecto";;
-        string devolver = "Login";
+        ViewBag.mensajeError = "Usuario o clave incorrecto";
+        string devolver = "LoginUser";
         Usuario usuario = BD.LoginUser(username, contrasena);
         if(usuario != null){
             devolver = "Index";
             HttpContext.Session.SetString("Usuario", Objetos.ObjectToString(usuario)); 
+        }
+        else{
+        ViewBag.Username = username;
+        ViewBag.Contrasena = contrasena;
         }
         return View(devolver);
     }
     public IActionResult LoginGuardarOrg(string username, string contrasena)
     {   
         ViewBag.mensajeError = "Usuario o clave incorrecto";;
-        string devolver = "Login";
+        string devolver = "LoginOrg";
         Organizacion organizacion = BD.LoginOrg(username, contrasena);
         if(organizacion != null){
             devolver = "Index";
@@ -125,4 +136,25 @@ public class HomeController : Controller
     public IActionResult ViewONGInfo(){
         return View("ONGInfo");
     }
+
+    public IActionResult ViewCatDonaciones(){
+        return View ("CatDonaciones");
+    }
+[HttpPost]
+public IActionResult CatDonacionesGuardar(string[] intereses)
+{
+    // intereses tendrá los valores seleccionados
+    // ej: ["musica", "cine"]
+      int idOrg = HttpContext.Session.GetInt32("IDOrganizacion").Value;
+
+    foreach (var idCatString in intereses)
+    {
+        int idCategoria = int.Parse(idCatString);
+        BD.InsertarCategoriaOrg(idOrg, idCategoria);
+    }
+
+    return View("Listo");
+}
+
+
 }
