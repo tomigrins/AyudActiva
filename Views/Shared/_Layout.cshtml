@@ -13,7 +13,7 @@
 </head>
 
 <body>
-   <header class="header">
+<header class="header">
 
     <!-- Logo -->
     <div class="header-logo">
@@ -31,59 +31,19 @@
         </ul>
     </nav>
 
-    <!-- Zona derecha: perfil + hamburguesa -->
     <div class="header-right">
 
         @{
             string user = Context.Session.GetString("Usuario");
-            bool isUserAuthenticated = !string.IsNullOrEmpty(user);
-
             string org = Context.Session.GetString("Organizacion");
-            bool isOrgAuthenticated = !string.IsNullOrEmpty(org);
+
+            bool isUser = !string.IsNullOrEmpty(user);
+            bool isOrg = !string.IsNullOrEmpty(org);
+            bool isLogged = isUser || isOrg;
         }
 
-        @if (isUserAuthenticated)
-        {
-            Usuario usuario = Objetos.StringToObject<Usuario>(user); 
-                {<h2>¡Bienvenido, @usuario.nombre!</h2>}
-        }
-        else if (isOrgAuthenticated){
-                Organizacion organizacion = Objetos.StringToObject<Organizacion>(org); 
-                {<h2>¡Bienvenido, @organizacion.nombre!</h2>}
-
-        }
-        <!-- Botón hamburguesa -->
-        <div class="btn-hamburguesa" onclick="toggleMenu()">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-        </div>
-
-<div id="overlay" class="overlay" onclick="toggleMenu()"></div>
-    <!-- Sidebar -->
-    <nav class="sidebar" id="sidebar">
-        <div class="btn-cerrar" onclick="toggleMenu()">&times;</div>
-
-        <ul>
-            <li>Menú</li>
-            <hr>
-            <li><a href='@Url.Action("ViewHistorial","Home")'>Historial</a></li>
-            <li><a href='@Url.Action("Index","Home")'>Mi agenda</a></li>
-            <li><a href='@Url.Action("Index","Home")'>Desafíos semanales</a></li>
-            <li><a href='@Url.Action("Index","Home")'>Certificados</a></li>
-            <li><a href='@Url.Action("Index","Home")'>Mis logros</a></li>
-            <li><a href='@Url.Action("Index","Home")'>Nuestra historia</a></li>
-            @if (isOrgAuthenticated){<li><a href='@Url.Action("ViewCatDonaciones","Home")'>Que donaciones busco</a></li>}
-
-            <form action='@Url.Action("Desloguearse", "Home")' method="post">
-                <li class="cerrarSesion">
-                    <button type="submit">Cerrar sesión</button>
-                </li>
-            </form>
-        </ul>
-    </nav>
-    
-        else
+        <!-- ❌ NADIE LOGUEADO → mostrar botones -->
+        @if (!isLogged)
         {
             <div class="header-login">
                 <a class="boton" href='@Url.Action("Login","Home")'>Iniciar sesión</a>
@@ -91,8 +51,63 @@
             </div>
         }
 
-    </div>
+        <!-- ✅ SI ESTÁ LOGUEADO → saludo + hamburguesa + sidebar -->
+        @if (isLogged)
+        {
+            <!-- Mostrar saludo -->
+            <div class="header-user">
+                @if (isUser)
+                {
+                    Usuario usuario = Objetos.StringToObject<Usuario>(user);
+                    <h2>¡Bienvenido, @usuario.nombre!</h2>
+                }
+                else if (isOrg)
+                {
+                    Organizacion organizacion = Objetos.StringToObject<Organizacion>(org);
+                    <h2>¡Bienvenido, @organizacion.nombre!</h2>
+                }
+            </div>
 
+            <!-- Botón hamburguesa -->
+            <div class="btn-hamburguesa" onclick="toggleMenu()">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+
+            <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+
+            <!-- Sidebar -->
+            <nav class="sidebar" id="sidebar">
+                <div class="btn-cerrar" onclick="toggleMenu()">&times;</div>
+
+                <ul>
+                    <li>Menú</li>
+                    <hr>
+
+                    <li><a href='@Url.Action("ViewHistorial","Home")'>Historial</a></li>
+                    <li><a href='@Url.Action("Index","Home")'>Mi agenda</a></li>
+                    <li><a href='@Url.Action("Index","Home")'>Desafíos semanales</a></li>
+                    <li><a href='@Url.Action("Index","Home")'>Certificados</a></li>
+                    <li><a href='@Url.Action("Index","Home")'>Mis logros</a></li>
+                    <li><a href='@Url.Action("Index","Home")'>Nuestra historia</a></li>
+
+                    <!-- ✔ SOLO ORGANIZACION -->
+                    @if (isOrg)
+                    {
+                        <li><a href='@Url.Action("ViewCatDonaciones","Home")'>Qué donaciones busco</a></li>
+                    }
+
+                    <form action='@Url.Action("Desloguearse", "Home")' method="post">
+                        <li class="cerrarSesion">
+                            <button type="submit">Cerrar sesión</button>
+                        </li>
+                    </form>
+                </ul>
+            </nav>
+        }
+
+    </div>
 </header>
 
 

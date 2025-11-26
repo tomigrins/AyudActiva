@@ -145,12 +145,20 @@ public IActionResult CatDonacionesGuardar(string[] intereses)
 {
     // intereses tendrá los valores seleccionados
     // ej: ["musica", "cine"]
-      int idOrg = HttpContext.Session.GetInt32("IDOrganizacion").Value;
+      string org = HttpContext.Session.GetString("Organizacion");
 
-    foreach (var idCatString in intereses)
+      if (org == null){
+    return RedirectToAction ("Index", "Home");
+      }
+      
+      Organizacion organizacion = Objetos.StringToObject<Organizacion>(org);
+      int IDOrganizacion = organizacion.IDOrganizacion;
+
+
+    foreach (var IDCatString in intereses)
     {
-        int idCategoria = int.Parse(idCatString);
-        BD.InsertarCategoriaOrg(idOrg, idCategoria);
+        int IDCategoria = int.Parse(IDCatString);
+        BD.InsertarCategoriaOrg(IDOrganizacion, IDCategoria);
     }
 
     return View("Listo");
