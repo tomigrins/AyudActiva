@@ -9,8 +9,8 @@
 <body>
     <section class = "registroUser">
     <form action='@Url.Action("LoginGuardarOrg","Home")' method="post">
-    <h2>Username:</h2> <p><input type="text" name = "username"></p>
-    <h2>Contraseña:</h2> <p><input type="password" name= "contrasena"></p>
+    <h2>Username:</h2> <p><input type="text" name = "username" value="@ViewBag.Username"></p>
+    <h2>Contraseña:</h2> <p><input type="password" name= "contrasena" value="@ViewBag.Contrasena"></p>
     <p><input type="submit" value = "Enviar"></p>
             <h3>@ViewBag.mensajeError</h3>
     </form>

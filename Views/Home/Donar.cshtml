@@ -3,14 +3,10 @@
 <div class="donar-panel">
     <h2>¿Qué quiero <strong>donar</strong>?</h2>
     <ul>
-        <li><input type="radio" name="donar" id="alimentos"><label for="alimentos">Alimentos</label></li>
-        <li><input type="radio" name="donar" id="ropa"><label for="ropa">Ropa</label></li>
-        <li><input type="radio" name="donar" id="bebes"><label for="bebes">Artículos para bebés</label></li>
-        <li><input type="radio" name="donar" id="muebles"><label for="muebles">Muebles</label></li>
-        <li><input type="radio" name="donar" id="tecno"><label for="tecno">Tecnología</label></li>
-        <li><input type="radio" name="donar" id="utiles"><label for="utiles">Útiles escolares</label></li>
-        <li><input type="radio" name="donar" id="cocina"><label for="cocina">Cocina</label></li>
-        <li><input type="radio" name="donar" id="libros"><label for="libros">Libros</label></li>
+         @foreach(Categoria item in ViewBag.Categorias)
+        {
+            <li><input type="radio" name="donar" id="@item.IDCategoriaDonacion"><label for="@item.IDCategoriaDonacion">@item.nombre</label></li>
+        }
     </ul>
 </div>
 

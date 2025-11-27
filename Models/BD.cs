@@ -67,13 +67,20 @@ public static class BD
         }
         return Lista;
     }
-    public static List<Ubicaciones> FiltrarApi(string categoria){
+     public static List<Categoria> TraerCategorias(){
+        List<Categoria> Lista  = new List<Categoria>();
+        string query = "select * from CategoriasDonaciones";
+        using (SqlConnection connection = new SqlConnection(_connectionString)){
+            Lista = connection.Query<Categoria>(query).ToList();
+        }
+        return Lista;
+    }
+    public static List<Ubicaciones> FiltrarApi(int categoria){
     List<Ubicaciones> Lista  = new List<Ubicaciones>();
     string query = @"select Organizaciones.nombre as titulo, latitud, longitud 
                      from Organizaciones 
                      inner join OrgCat on Organizaciones.IDOrganizacion = OrgCat.IDOrganizacion 
-                     inner join CategoriasDonaciones on OrgCat.IDCategoriaDonacion = CategoriasDonaciones.IDCategoriaDonacion 
-                     where CategoriasDonaciones.nombre = @categoria";
+                     where OrgCat.IDCategoriaDonacion = @categoria";
 
     using (SqlConnection connection = new SqlConnection(_connectionString)){
         Lista = connection.Query<Ubicaciones>(query, new { categoria }).ToList(); // ✅ PASAMOS EL PARÁMETRO

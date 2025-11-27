@@ -1,37 +1,13 @@
 <form action='@Url.Action("CatDonacionesGuardar","Home")' method="post">
     <p>Seleccioná lo que buscás:</p>
 
-    <label>
-        <input type="checkbox" name="intereses" value="1"> Alimentos
-    </label><br>
+    @foreach(Categoria item in ViewBag.Categorias)
+    {
+        <label>
+            <input type="checkbox" name="intereses" value="@item.IDCategoriaDonacion"> @item.nombre
+        </label><br>
 
-    <label>
-        <input type="checkbox" name="intereses" value="2"> Ropa
-    </label><br>
-
-    <label>
-        <input type="checkbox" name="intereses" value="3"> Artículos para bebé
-    </label><br>
-
-    <label>
-        <input type="checkbox" name="intereses" value="4"> Muebles
-    </label><br>
-
-    <label>
-        <input type="checkbox" name="intereses" value="5"> Tecnología
-    </label><br>
-
-    <label>
-        <input type="checkbox" name="intereses" value="6"> Útiles escolares
-    </label><br>
-
-    <label>
-        <input type="checkbox" name="intereses" value="7"> Cocina
-    </label><br>
-
-    <label>
-        <input type="checkbox" name="intereses" value="8"> Libros
-    </label><br>
+    }
 
     <button type="submit">Enviar</button>
 </form>

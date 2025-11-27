@@ -33,29 +33,41 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult LoginGuardarUser(string username, string contrasena)
     {   
+        ViewBag.Username = "";
+        ViewBag.Contrasena = "";
         ViewBag.mensajeError = "Usuario o clave incorrecto";
-        string devolver = "LoginUser";
+
         Usuario usuario = BD.LoginUser(username, contrasena);
         if(usuario != null){
-            devolver = "Index";
+
             HttpContext.Session.SetString("Usuario", Objetos.ObjectToString(usuario)); 
+                        return RedirectToAction("Index", "Home");
         }
         else{
         ViewBag.Username = username;
         ViewBag.Contrasena = contrasena;
+                return View(LoginUser);
         }
-        return View(devolver);
+
     }
     public IActionResult LoginGuardarOrg(string username, string contrasena)
     {   
+        ViewBag.Username = "";
+        ViewBag.Contrasena = "";
         ViewBag.mensajeError = "Usuario o clave incorrecto";;
-        string devolver = "LoginOrg";
+
         Organizacion organizacion = BD.LoginOrg(username, contrasena);
         if(organizacion != null){
-            devolver = "Index";
+
             HttpContext.Session.SetString("Organizacion", Objetos.ObjectToString(organizacion)); 
+                        return RedirectToAction("Index", "Home");
         }
-        return View(devolver);
+        else{
+        ViewBag.Username = username;
+        ViewBag.Contrasena = contrasena;
+        return View(LoginOrg);
+        }
+
     }
 
     public IActionResult Registro()
@@ -73,34 +85,53 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult RegistroGuardarUser(string nombre, string apellido,string username, string email, DateTime fechaNacimiento, string contrasena, string confirmarContrasena)
     {
-        string devolver = "RegistroUser";
+        
+        ViewBag.Nombre = nombre;
+ViewBag.Apellido = apellido;
+ViewBag.Username = username;
+ViewBag.Email = email;
+ViewBag.FechaNacimiento = fechaNacimiento.ToString("yyyy-MM-dd");
+ViewBag.Contrasena = contrasena;
+ViewBag.ConfirmarContrasena = confirmarContrasena;
+
+        
         if(BD.repetirUsernameUser(username)){
             ViewBag.mensajeError = "ESE USERNAME YA EXISTE";
+                    return View(RegistroUser);
         }
         else if (contrasena != confirmarContrasena){
-            ViewBag.mensajeError = "LAS CONTRASEÑAS NO COINCIDEN";}
+            ViewBag.mensajeError = "LAS CONTRASEÑAS NO COINCIDEN";
+                    return View(RegistroUser);}
         else if (nombre != null && apellido != null && username != null && contrasena != null && email != null && fechaNacimiento != null){
         BD.RegistroUser(nombre, apellido, username, contrasena, email, fechaNacimiento);
         HttpContext.Session.SetString("Usuario", Objetos.ObjectToString(BD.LoginUser(username, contrasena))); 
-        devolver = "Index";
         }
-        return View(devolver);
+        return RedirectToAction("Index","Home");
     }
 
     public IActionResult RegistroGuardarOrg(string nombre, string latitud,string longitud, string email,string descripcion,string username, string contrasena, string confirmarContrasena)
     {
-        string devolver = "RegistroOrg";
+        ViewBag.Nombre = nombre;
+ViewBag.Latitud = latitud;
+ViewBag.Longitud = longitud;
+ViewBag.Email = email;
+ViewBag.Descripcion = descripcion;
+ViewBag.Username = username;
+ViewBag.Contrasena = contrasena;
+ViewBag.ConfirmarContrasena = confirmarContrasena;
+
         if(BD.repetirUsernameOrg(username)){
             ViewBag.mensajeError = "ESE USERNAME YA EXISTE";
+                    return View(RegistroOrg);
         }
         else if (contrasena != confirmarContrasena){
-            ViewBag.mensajeError = "LAS CONTRASEÑAS NO COINCIDEN";}
+            ViewBag.mensajeError = "LAS CONTRASEÑAS NO COINCIDEN";
+                                return View(RegistroOrg);}
         else if (nombre != null && latitud != null && longitud != null && contrasena != null && email != null && descripcion != null && username != null){
         BD.RegistroOrg(nombre, latitud, longitud, contrasena, email, descripcion, username);
         HttpContext.Session.SetString("Organizacion", Objetos.ObjectToString(BD.LoginOrg(username, contrasena))); 
-        devolver = "Index";
         }
-        return View(devolver);
+  return RedirectToAction("Index","Home");
     }
 
     public IActionResult Desloguearse(){
@@ -111,15 +142,16 @@ public class HomeController : Controller
     {
     ViewBag.Ubicaciones = JsonSerializer.Serialize(BD.RecibirApi());
     ViewBag.UbicacionesDiv = BD.RecibirApi();
+    ViewBag.Categorias = BD.TraerCategorias();
     return View();
     }
-    public JsonResult FiltrarUbicaciones(string categoria)
+    public JsonResult FiltrarUbicaciones(int categoria)
     {
     var lista = BD.FiltrarApi(categoria);
     return Json(lista);
     }
     [HttpGet]
-    public JsonResult FiltrarCampanas(string categoria)
+    public JsonResult FiltrarCampanas(int categoria)
     {
     var lista = BD.FiltrarApi(categoria); // mismo filtro que ubicaciones
     return Json(lista);
@@ -138,6 +170,7 @@ public class HomeController : Controller
     }
 
     public IActionResult ViewCatDonaciones(){
+        ViewBag.Categorias = BD.TraerCategorias();
         return View ("CatDonaciones");
     }
 [HttpPost]

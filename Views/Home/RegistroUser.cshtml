@@ -10,22 +10,25 @@
     <section class =  "registroUser">
         <form action='@Url.Action("RegistroGuardarUser","Home")' method="post">
                     <h2>Nombre:</h2> 
-                    <p><input type="text" name="nombre" required></p>
+                    <p><input type="text" name="nombre" value= "@ViewBag.Nombre" required></p>
                     <h2>Apellido:</h2> 
-                    <p><input type="text" name="apellido" required></p>
+                    <p><input type="text" name="apellido" value= "@ViewBag.Apellido" required></p>
                     <h2>Username:</h2> 
-                    <p><input type="text" name="username" required></p>
+                    <p><input type="text" name="username" value= "@ViewBag.Username" required></p>
                     <h2>Email:</h2> 
-                    <p><input type="email" name="email" required></p>
+                    <p><input type="email" name="email" value= "@ViewBag.Email" required></p>
                     <h2>Fecha de nacimiento:</h2> 
-                    <p><input type="date" name="fechaNacimiento" required></p>
+                    <p><input type="date" name="fechaNacimiento" value= "@ViewBag.FechaNacimiento" required></p>
                     <h2>Contraseña:</h2> 
-                    <p><input type="password" name="contrasena" required></p>
+                    <p><input type="password" name="contrasena" value= "@ViewBag.Contrasena" required></p>
                     <h2>Repetir contraseña:</h2> 
-                    <p><input type="password" name="confirmarContrasena" required></p>
+                    <p><input type="password" name="confirmarContrasena" value= "@ViewBag.ConfirmarContrasena" required></p>
                     <p><input type="submit" value="Enviar"></p>
                                 <h3>@ViewBag.mensajeError</h3>
                 </form>
             </section>
 </body>
 </html>
+
+
+
