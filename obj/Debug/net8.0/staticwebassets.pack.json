@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\Imagenes\\LOGO_SIMPLIFICADO.png"
     },
     {
+      "Id": "C:\\Users\\49193970\\AyudActiva\\wwwroot\\Imagenes\\amber.png",
+      "PackagePath": "staticwebassets\\Imagenes\\amber.png"
+    },
+    {
       "Id": "C:\\Users\\49193970\\AyudActiva\\wwwroot\\Imagenes\\facebook.png",
       "PackagePath": "staticwebassets\\Imagenes\\facebook.png"
     },
@@ -37,16 +41,16 @@
       "PackagePath": "staticwebassets\\Imagenes\\mbappe.webp"
     },
     {
+      "Id": "C:\\Users\\49193970\\AyudActiva\\wwwroot\\Imagenes\\nicolas.png",
+      "PackagePath": "staticwebassets\\Imagenes\\nicolas.png"
+    },
+    {
       "Id": "C:\\Users\\49193970\\AyudActiva\\wwwroot\\Imagenes\\tiktok.jpg",
       "PackagePath": "staticwebassets\\Imagenes\\tiktok.jpg"
     },
     {
       "Id": "C:\\Users\\49193970\\AyudActiva\\wwwroot\\Imagenes\\twitter.jpeg",
       "PackagePath": "staticwebassets\\Imagenes\\twitter.jpeg"
-    },
-    {
-      "Id": "C:\\Users\\49193970\\AyudActiva\\wwwroot\\bd\\BD.sql",
-      "PackagePath": "staticwebassets\\bd\\BD.sql"
     },
     {
       "Id": "C:\\Users\\49193970\\AyudActiva\\wwwroot\\bd\\BD_Final.sql",
