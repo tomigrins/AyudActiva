@@ -9,99 +9,99 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AyudActiva
 build_property.RootNamespace = AyudActiva
-build_property.ProjectDir = C:\Users\49627257\AyudActiva\
+build_property.ProjectDir = C:\Users\49193970\AyudActiva\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\49627257\AyudActiva
+build_property.MSBuildProjectDirectory = C:\Users\49193970\AyudActiva
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/49627257/AyudActiva/cosas/Index.cshtml]
+[C:/Users/49193970/AyudActiva/cosas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Y29zYXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49627257/AyudActiva/cosas/RegistrarNO.cshtml]
+[C:/Users/49193970/AyudActiva/cosas/RegistrarNO.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Y29zYXNcUmVnaXN0cmFyTk8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49627257/AyudActiva/cosas/Registrate.cshtml]
+[C:/Users/49193970/AyudActiva/cosas/Registrate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Y29zYXNcUmVnaXN0cmF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49627257/AyudActiva/Views/Home/Campana.cshtml]
+[C:/Users/49193970/AyudActiva/Views/Home/Campana.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYW1wYW5hLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49627257/AyudActiva/Views/Home/CatDonaciones.cshtml]
+[C:/Users/49193970/AyudActiva/Views/Home/CatDonaciones.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXREb25hY2lvbmVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49627257/AyudActiva/Views/Home/ContactarCampana.cshtml]
+[C:/Users/49193970/AyudActiva/Views/Home/ContactarCampana.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0YXJDYW1wYW5hLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49627257/AyudActiva/Views/Home/Donar.cshtml]
+[C:/Users/49193970/AyudActiva/Views/Home/Donar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEb25hci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49627257/AyudActiva/Views/Home/Financiar.cshtml]
+[C:/Users/49193970/AyudActiva/Views/Home/Financiar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGaW5hbmNpYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49627257/AyudActiva/Views/Home/Historial.cshtml]
+[C:/Users/49193970/AyudActiva/Views/Home/Historial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIaXN0b3JpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49627257/AyudActiva/Views/Home/Index.cshtml]
+[C:/Users/49193970/AyudActiva/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49627257/AyudActiva/Views/Home/Listo.cshtml]
+[C:/Users/49193970/AyudActiva/Views/Home/Listo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaXN0by5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49627257/AyudActiva/Views/Home/Login.cshtml]
+[C:/Users/49193970/AyudActiva/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49627257/AyudActiva/Views/Home/LoginOrg.cshtml]
+[C:/Users/49193970/AyudActiva/Views/Home/LoginOrg.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbk9yZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49627257/AyudActiva/Views/Home/LoginUser.cshtml]
+[C:/Users/49193970/AyudActiva/Views/Home/LoginUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpblVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49627257/AyudActiva/Views/Home/ONGInfo.cshtml]
+[C:/Users/49193970/AyudActiva/Views/Home/ONGInfo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPTkdJbmZvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49627257/AyudActiva/Views/Home/Registro.cshtml]
+[C:/Users/49193970/AyudActiva/Views/Home/Registro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Ryby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49627257/AyudActiva/Views/Home/RegistroOrg.cshtml]
+[C:/Users/49193970/AyudActiva/Views/Home/RegistroOrg.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Ryb09yZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49627257/AyudActiva/Views/Home/RegistroUser.cshtml]
+[C:/Users/49193970/AyudActiva/Views/Home/RegistroUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Ryb1VzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49627257/AyudActiva/Views/Shared/_Layout.cshtml]
+[C:/Users/49193970/AyudActiva/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49627257/AyudActiva/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/49193970/AyudActiva/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49627257/AyudActiva/Views/_ViewImports.cshtml]
+[C:/Users/49193970/AyudActiva/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49627257/AyudActiva/Views/_ViewStart.cshtml]
+[C:/Users/49193970/AyudActiva/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
