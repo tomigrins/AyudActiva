@@ -36,7 +36,6 @@ C:\Users\49627257\AyudActiva\bin\Debug\net8.0\System.Memory.Data.dll
 C:\Users\49627257\AyudActiva\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\49627257\AyudActiva\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\49627257\AyudActiva\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
-C:\Users\49627257\AyudActiva\bin\Debug\net8.0\System.Text.Json.dll
 C:\Users\49627257\AyudActiva\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
 C:\Users\49627257\AyudActiva\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
 C:\Users\49627257\AyudActiva\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
@@ -68,11 +67,6 @@ C:\Users\49627257\AyudActiva\obj\Debug\net8.0\AyudActiva.RazorAssemblyInfo.cs
 C:\Users\49627257\AyudActiva\obj\Debug\net8.0\AyudActiva.sourcelink.json
 C:\Users\49627257\AyudActiva\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\49627257\AyudActiva\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\49627257\AyudActiva\obj\Debug\net8.0\staticwebassets\msbuild.AyudActiva.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\49627257\AyudActiva\obj\Debug\net8.0\staticwebassets\msbuild.build.AyudActiva.props
-C:\Users\49627257\AyudActiva\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.AyudActiva.props
-C:\Users\49627257\AyudActiva\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.AyudActiva.props
-C:\Users\49627257\AyudActiva\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\49627257\AyudActiva\obj\Debug\net8.0\scopedcss\bundle\AyudActiva.styles.css
 C:\Users\49627257\AyudActiva\obj\Debug\net8.0\AyudActiva.csproj.Up2Date
 C:\Users\49627257\AyudActiva\obj\Debug\net8.0\AyudActiva.dll
@@ -162,3 +156,10 @@ C:\Users\49193970\AyudActiva\obj\Debug\net8.0\refint\AyudActiva.dll
 C:\Users\49193970\AyudActiva\obj\Debug\net8.0\AyudActiva.pdb
 C:\Users\49193970\AyudActiva\obj\Debug\net8.0\AyudActiva.genruntimeconfig.cache
 C:\Users\49193970\AyudActiva\obj\Debug\net8.0\ref\AyudActiva.dll
+C:\Users\49627257\AyudActiva\bin\Debug\net8.0\AyudActiva.staticwebassets.endpoints.json
+C:\Users\49627257\AyudActiva\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\49627257\AyudActiva\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\49627257\AyudActiva\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\49627257\AyudActiva\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\49627257\AyudActiva\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\49627257\AyudActiva\obj\Debug\net8.0\staticwebassets.build.endpoints.json

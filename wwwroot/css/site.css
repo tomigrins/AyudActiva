@@ -1104,120 +1104,6 @@ body {
 
 
 
-/*DONAR*/
-/* Donar */
-.Donar iframe {
-  width: 100%;
-  height: 100vh;
-  border: 0;
-}
-
-.donar-panel-campana{
-  position: absolute;
-  right: 5%;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.50);
-  backdrop-filter: blur(8px);
-  border-radius: 20px;
-  padding-left: 2%;
-  z-index: 2;
-  color: #1e1e8f;
-  width: 20%;
-  min-width: 250px;
-  text-align: left;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-/* Contenedor de cada campaña: texto izquierda, botón derecha */
-.campana-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-/* Botón SOLO dentro del panel y más pequeño */
-.btn-vermas-campana {
-  padding: 4px 10px !important;
-  font-size: 12px !important;
-  border-radius: 10px !important;
-}
-
-
-
-.donar-panel {
-  position: absolute;
-  left: 5%;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.50);
-  backdrop-filter: blur(8px);
-  border-radius: 20px;
-  padding-left: 2%;
-  z-index: 2;
-  color: #1e1e8f;
-  width: 20%;
-  min-width: 250px;
-  text-align: left;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-
-
-
-.donar-panel h2 {
-  font-size: 1.3em;
-  font-weight: 600;
-  border-bottom: 2px solid #1e1e8f;
-  padding-bottom: 0.5em;
-  margin-bottom: 1.5em;
-  text-align: left;
-}
-
-
-
-
-.donar-panel ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-
-
-
-.donar-panel li {
-  margin-bottom: 1em;
-  display: flex;
-  align-items: center;
-  gap: 0.6em;
-}
-
-
-
-
-.donar-panel input[type="radio"] {
-  accent-color: #1e1e8f;
-  transform: scale(1.2);
-  cursor: pointer;
-}
-
-
-
-
-.donar-panel label {
-  font-size: 0.95em;
-  color: #1e1e8f;
-  cursor: pointer;
-}
-
 
 /* RegistroInicio */
 .elegir-container {
@@ -2128,4 +2014,114 @@ hr{
 
 .ONG .boton:hover {
   background-color: #2745c7;
+}
+
+
+/* =======================
+   MAPA A PANTALLA COMPLETA
+   ======================= */
+   #map {
+    width: 100%;
+    height: 100vh;   /* 🔥 ocupa toda la pantalla */
+    position: relative;
+}
+
+/* =======================
+   PANEL: ¿QUÉ QUIERO DONAR?
+   ======================= */
+.donar-panel {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    width: 350px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.donar-panel h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #1b1bde;
+    border-bottom: 2px solid #1b1bde;
+    padding-bottom: 5px;
+}
+
+.donar-panel ul {
+    list-style: none;
+    padding: 0;
+}
+
+.donar-panel li {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.donar-panel input[type="radio"] {
+    transform: scale(1.2);
+}
+
+.donar-panel label {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/* =======================
+   PANEL DE CAMPAÑAS
+   ======================= */
+.donar-panel-campana {
+    position: absolute;
+    top: 100px;
+    right: 40px;
+    width: 350px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.donar-panel-campana h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #1b1bde;
+    border-bottom: 2px solid #1b1bde;
+    padding-bottom: 5px;
+}
+
+.campana-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.6);
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.campana-item p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.btn-vermas-campana {
+    background: #1b1bde;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.btn-vermas-campana:hover {
+    background: #0d0db5;
+    transform: scale(1.05);
 }
