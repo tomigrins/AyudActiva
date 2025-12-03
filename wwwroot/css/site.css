@@ -1,3 +1,12 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}
 html {
   font-size: 14px;
   min-height: 100%;
@@ -2021,9 +2030,8 @@ hr{
    MAPA A PANTALLA COMPLETA
    ======================= */
    #map {
-    width: 100%;
-    height: 100vh;   /* 🔥 ocupa toda la pantalla */
-    position: relative;
+    flex: 1;               /* Ocupa TODO el espacio disponible */
+    min-height: 400px;     /* Por seguridad */
 }
 
 /* =======================
