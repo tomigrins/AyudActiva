@@ -9,6 +9,18 @@
       "PackagePath": "staticwebassets\\Imagenes\\Banner.png"
     },
     {
+      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\BannerCampana.jpg",
+      "PackagePath": "staticwebassets\\Imagenes\\BannerCampana.jpg"
+    },
+    {
+      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\Comunidad.jpg",
+      "PackagePath": "staticwebassets\\Imagenes\\Comunidad.jpg"
+    },
+    {
+      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\Educacion.jpg",
+      "PackagePath": "staticwebassets\\Imagenes\\Educacion.jpg"
+    },
+    {
       "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\Iconografia1-AyudActiva.jpg",
       "PackagePath": "staticwebassets\\Imagenes\\Iconografia1-AyudActiva.jpg"
     },
@@ -23,6 +35,22 @@
     {
       "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\LOGO_SIMPLIFICADO.png",
       "PackagePath": "staticwebassets\\Imagenes\\LOGO_SIMPLIFICADO.png"
+    },
+    {
+      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\Salud.png",
+      "PackagePath": "staticwebassets\\Imagenes\\Salud.png"
+    },
+    {
+      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\TestimonioCampana1.jpg",
+      "PackagePath": "staticwebassets\\Imagenes\\TestimonioCampana1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\TestimonioCampana2.jfif",
+      "PackagePath": "staticwebassets\\Imagenes\\TestimonioCampana2.jfif"
+    },
+    {
+      "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\TestimonioCampana3.jpg",
+      "PackagePath": "staticwebassets\\Imagenes\\TestimonioCampana3.jpg"
     },
     {
       "Id": "C:\\Users\\49190820\\AyudActiva\\wwwroot\\Imagenes\\amber.png",
